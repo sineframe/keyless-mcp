@@ -77,7 +77,7 @@ jobs:
           } >> "$GITHUB_OUTPUT"
       - name: Upload M3 reports
         if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: m3-live-reports
           path: .m3/reports/
@@ -273,7 +273,7 @@ jobs:
           exit "${status}"
       - name: Upload the agent pass-rate drops
         if: ${{ !cancelled() && steps.compare.outputs.regressed == 'true' }}
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: agent-regressions-${{ matrix.harness }}
           path: ${{ runner.temp }}/agent-regressions-${{ matrix.harness }}.md
@@ -281,7 +281,7 @@ jobs:
           retention-days: 7
       - name: Upload the pass-rate file
         if: ${{ !cancelled() && steps.run.outcome != 'skipped' }}
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: agent-results-${{ matrix.harness }}
           path: docs/results/agent-${{ matrix.harness }}-latest.json
@@ -289,7 +289,7 @@ jobs:
           retention-days: 90
       - name: Upload M3 reports
         if: ${{ !cancelled() && steps.run.outcome != 'skipped' }}
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: m3-agent-reports-${{ matrix.harness }}
           path: .m3/reports/
