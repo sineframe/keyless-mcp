@@ -1,0 +1,32 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Qzzz&languagefallback=1&languages=en&props=labels%7Cdescriptions%7Csitelinks&sitefilter=enwiki",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "error": {
+        "*": "See https://www.wikidata.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes.",
+        "code": "no-such-entity",
+        "id": "Qzzz",
+        "info": "Could not find an entity with the ID \"Qzzz\".",
+        "messages": [
+          {
+            "html": {
+              "*": "Could not find an entity with the ID \"Qzzz\"."
+            },
+            "name": "wikibase-api-no-such-entity",
+            "parameters": [
+              "Qzzz"
+            ]
+          }
+        ]
+      },
+      "servedby": "mw-api-ext.eqiad.main-5c8bb5c95f-kjv7m"
+    }
+  }
+}

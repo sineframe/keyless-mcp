@@ -1,0 +1,8 @@
+name: wikidata
+title: Wikidata
+description: Search the Wikidata knowledge base for entities and read an entity's label, description and Wikipedia article link in any language.
+toolset: reference
+base_url: https://www.wikidata.org/w/api.php
+docs_url: https://www.wikidata.org/wiki/Wikidata:Data_access
+rate_limit_per_minute: 60
+author: adebowalep

@@ -1,0 +1,34 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=P31&languagefallback=1&languages=en&props=labels%7Cdescriptions%7Csitelinks&sitefilter=enwiki",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "entities": {
+        "P31": {
+          "datatype": "wikibase-item",
+          "descriptions": {
+            "en": {
+              "language": "en",
+              "value": "type to which this subject corresponds/belongs. Different from P279 (subclass of); for example: K2 is an instance of mountain; volcano is a subclass of mountain"
+            }
+          },
+          "id": "P31",
+          "labels": {
+            "en": {
+              "language": "en",
+              "value": "instance of"
+            }
+          },
+          "type": "property"
+        }
+      },
+      "success": 1
+    }
+  }
+}

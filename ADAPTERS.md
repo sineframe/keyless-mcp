@@ -6,9 +6,9 @@ Every adapter wraps a free public API that needs no key. Enable a group of them 
 `--toolsets` (or `KEYLESS_MCP_TOOLSETS`); the default is all. To add one, see
 [docs/adapter-contract.md](docs/adapter-contract.md).
 
-**8 adapters, 16 tools.**
+**9 adapters, 18 tools.**
 
-Toolsets with no adapters yet (they are valid for `--toolsets` and serve no tools until the first adapter lands): `finance`, `reference`, `fun`.
+Toolsets with no adapters yet (they are valid for `--toolsets` and serve no tools until the first adapter lands): `finance`, `fun`.
 
 ## science
 
@@ -45,6 +45,14 @@ News and community feeds.
 | Adapter | Tools | API docs | Author | Agent pass rate (codex) |
 |---|---|---|---|---|
 | **Hacker News** (`hackernews`)<br>Read the current top stories on Hacker News and fetch any story, comment, job or poll by id (official Firebase API). | `hackernews_top_stories`<br>`hackernews_get_item` | [docs](https://github.com/HackerNews/API) | [sineframe](https://github.com/sineframe) | 1/1 |
+
+## reference
+
+Looking things up: books, holidays, words, entities, web archives.
+
+| Adapter | Tools | API docs | Author | Agent pass rate (codex) |
+|---|---|---|---|---|
+| **Wikidata** (`wikidata`)<br>Search the Wikidata knowledge base for entities and read an entity's label, description and Wikipedia article link in any language. | `wikidata_search_entities`<br>`wikidata_get_entity` | [docs](https://www.wikidata.org/wiki/Wikidata:Data_access) | [adebowalep](https://github.com/adebowalep) | - |
 
 ## About the agent pass rate
 

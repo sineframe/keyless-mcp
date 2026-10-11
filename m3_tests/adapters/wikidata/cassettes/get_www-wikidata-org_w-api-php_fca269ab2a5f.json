@@ -1,0 +1,71 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=2&search=Douglas+Adams",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "search": [
+        {
+          "concepturi": "http://www.wikidata.org/entity/Q28421831",
+          "description": "American environmental engineer",
+          "display": {
+            "description": {
+              "language": "en",
+              "value": "American environmental engineer"
+            },
+            "label": {
+              "language": "en",
+              "value": "Douglas Adams"
+            }
+          },
+          "id": "Q28421831",
+          "label": "Douglas Adams",
+          "match": {
+            "language": "en",
+            "text": "Douglas Adams",
+            "type": "label"
+          },
+          "pageid": 30117550,
+          "repository": "wikidata",
+          "title": "Q28421831",
+          "url": "//www.wikidata.org/wiki/Q28421831"
+        },
+        {
+          "concepturi": "http://www.wikidata.org/entity/Q42",
+          "description": "British science fiction writer and humorist (1952–2001)",
+          "display": {
+            "description": {
+              "language": "en",
+              "value": "British science fiction writer and humorist (1952–2001)"
+            },
+            "label": {
+              "language": "mul",
+              "value": "Douglas Adams"
+            }
+          },
+          "id": "Q42",
+          "label": "Douglas Adams",
+          "match": {
+            "language": "mul",
+            "text": "Douglas Adams",
+            "type": "label"
+          },
+          "pageid": 138,
+          "repository": "wikidata",
+          "title": "Q42",
+          "url": "//www.wikidata.org/wiki/Q42"
+        }
+      ],
+      "search-continue": 2,
+      "searchinfo": {
+        "search": "Douglas Adams"
+      },
+      "success": 1
+    }
+  }
+}

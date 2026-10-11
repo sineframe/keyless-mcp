@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q42&languagefallback=1&languages=de&props=labels%7Cdescriptions%7Csitelinks&sitefilter=dewiki%7Cenwiki",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "entities": {
+        "Q42": {
+          "descriptions": {
+            "de": {
+              "language": "de",
+              "value": "britischer Science-Fiction-Autor und Humorist (1952–2001)"
+            }
+          },
+          "id": "Q42",
+          "labels": {
+            "de": {
+              "for-language": "de",
+              "language": "mul",
+              "value": "Douglas Adams"
+            }
+          },
+          "sitelinks": {
+            "dewiki": {
+              "badges": [],
+              "site": "dewiki",
+              "title": "Douglas Adams"
+            },
+            "enwiki": {
+              "badges": [
+                "Q17437798"
+              ],
+              "site": "enwiki",
+              "title": "Douglas Adams"
+            }
+          },
+          "type": "item"
+        }
+      },
+      "success": 1
+    }
+  }
+}
