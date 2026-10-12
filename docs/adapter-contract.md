@@ -72,8 +72,9 @@ data = await http.post_json(url, {"q": "x"})  # JSON body, parsed JSON reply
 text = await http.get_text(url, params)  # raw text, e.g. XML
 ```
 
-It sets the `User-Agent`, applies timeouts and your `rate_limit_per_minute`, and provides
-offline record/replay (below). It also turns every upstream failure (HTTP 4xx/5xx, timeout,
+It sets the `User-Agent`, applies timeouts and your `rate_limit_per_minute`, retries transient GET
+failures (429, 502, 503 and 504) within a bounded budget, and leaves POST single-attempt. It also
+provides offline record/replay (below) and turns every upstream failure (HTTP 4xx/5xx, timeout,
 connection error, invalid JSON) into `UpstreamError`, which reaches the agent as a tool result
 with `isError` and a readable message. You normally do nothing.
 

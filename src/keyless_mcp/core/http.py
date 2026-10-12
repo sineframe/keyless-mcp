@@ -16,7 +16,10 @@ from __future__ import annotations
 
 import json
 import os
-from collections.abc import Mapping
+import random
+import time
+from asyncio import sleep as async_sleep
+from collections.abc import Awaitable, Callable, Mapping
 from dataclasses import dataclass
 from enum import StrEnum
 from pathlib import Path
@@ -32,6 +35,9 @@ from .ratelimit import RateLimiter
 
 MODE_ENV = "KEYLESS_MCP_HTTP_MODE"
 CASSETTE_DIR_ENV = "KEYLESS_MCP_CASSETTE_DIR"
+_RETRYABLE_STATUSES = frozenset({429, 502, 503, 504})
+_MAX_ATTEMPTS = 3
+_MAX_RETRY_DELAY = 3.0
 
 
 class HttpMode(StrEnum):
@@ -63,10 +69,19 @@ class HttpClient:
     """Shared client. Create one per server process and hand out per-adapter views."""
 
     def __init__(
-        self, config: HttpConfig | None = None, *, transport: httpx.AsyncBaseTransport | None = None
+        self,
+        config: HttpConfig | None = None,
+        *,
+        transport: httpx.AsyncBaseTransport | None = None,
+        sleep: Callable[[float], Awaitable[None]] = async_sleep,
+        clock: Callable[[], float] = time.monotonic,
+        jitter: Callable[[], float] = random.random,
     ) -> None:
         self.config = config or HttpConfig()
         self._transport = transport
+        self._sleep = sleep
+        self._clock = clock
+        self._jitter = jitter
         self._client: httpx.AsyncClient | None = None
 
     def for_adapter(self, name: str, rate_limit_per_minute: int) -> AdapterHttp:
@@ -110,13 +125,15 @@ class HttpClient:
             self._require_cassette_dir()  # fail before sending a live request we cannot save
         if self.config.mode is HttpMode.REPLAY:
             response = self._replay(adapter.name, method, url, json_body)
+            attempts = 1
         else:
-            response = await self._send(adapter, method, url, json_body)
+            response, attempts = await self._send(adapter, method, url, json_body)
             if self.config.mode is HttpMode.RECORD:
                 cassette.save(self._require_cassette_dir(), method, url, json_body, response)
         if response.status >= 400:
+            attempt_note = f" after {attempts} attempts" if attempts > 1 else ""
             raise UpstreamError(
-                f"{adapter.name}: {method} {url} returned HTTP {response.status}: "
+                f"{adapter.name}: {method} {url} returned HTTP {response.status}{attempt_note}: "
                 f"{_snippet(response.body)}",
                 status=response.status,
             )
@@ -136,29 +153,63 @@ class HttpClient:
 
     async def _send(
         self, adapter: AdapterHttp, method: str, url: str, json_body: Any
-    ) -> cassette.RecordedResponse:
-        await adapter.limiter.acquire()
-        try:
-            raw = await self._live_client().request(method, url, json=json_body)
-        except httpx.TimeoutException:
-            raise UpstreamError(
-                f"{adapter.name}: {method} {url} timed out after {self.config.timeout:g}s. "
-                "The upstream API is slow or unavailable; try again shortly."
-            ) from None
-        except httpx.HTTPError as exc:
-            raise UpstreamError(
-                f"{adapter.name}: could not reach {url} ({type(exc).__name__}: {exc}). "
-                "Check the network connection or try again shortly."
-            ) from None
-        content_type = raw.headers.get("content-type", "").split(";")[0].strip().lower()
-        text = raw.text
-        body: Any = text
-        if "json" in content_type:
+    ) -> tuple[cassette.RecordedResponse, int]:
+        retryable = method.upper() == "GET"
+        deadline = self._clock() + self.config.timeout
+        for attempt in range(1, _MAX_ATTEMPTS + 1):
+            await adapter.limiter.acquire()
+            remaining = deadline - self._clock()
+            if remaining <= 0:
+                raise UpstreamError(
+                    f"{adapter.name}: {method} {url} exhausted its {self.config.timeout:g}s "
+                    f"timeout budget after {attempt - 1} attempts."
+                )
             try:
-                body = json.loads(text)
-            except ValueError:
-                body = text
-        return cassette.RecordedResponse(raw.status_code, content_type, body)
+                raw = await self._live_client().request(
+                    method, url, json=json_body, timeout=remaining
+                )
+            except (httpx.ConnectError, httpx.ConnectTimeout) as exc:
+                if (
+                    retryable
+                    and attempt < _MAX_ATTEMPTS
+                    and await self._wait_before_retry(attempt, deadline)
+                ):
+                    continue
+                attempt_note = f" after {attempt} attempts" if attempt > 1 else ""
+                raise UpstreamError(
+                    f"{adapter.name}: could not reach {url}{attempt_note} "
+                    f"({type(exc).__name__}: {exc}). Check the network connection or try again "
+                    "shortly."
+                ) from None
+            except httpx.TimeoutException:
+                raise UpstreamError(
+                    f"{adapter.name}: {method} {url} timed out after {self.config.timeout:g}s. "
+                    "The upstream API is slow or unavailable; try again shortly."
+                ) from None
+            except httpx.HTTPError as exc:
+                raise UpstreamError(
+                    f"{adapter.name}: could not reach {url} ({type(exc).__name__}: {exc}). "
+                    "Check the network connection or try again shortly."
+                ) from None
+
+            response = _recorded_response(raw)
+            if not (
+                retryable
+                and response.status in _RETRYABLE_STATUSES
+                and attempt < _MAX_ATTEMPTS
+                and await self._wait_before_retry(attempt, deadline, raw.headers.get("retry-after"))
+            ):
+                return response, attempt
+        raise AssertionError("retry loop ended without a response")
+
+    async def _wait_before_retry(
+        self, attempt: int, deadline: float, retry_after: str | None = None
+    ) -> bool:
+        delay = _retry_delay(attempt, retry_after, self._jitter)
+        if delay >= deadline - self._clock():
+            return False
+        await self._sleep(delay)
+        return True
 
 
 @dataclass
@@ -202,3 +253,27 @@ def _snippet(body: Any, limit: int = 200) -> str:
     text = body if isinstance(body, str) else json.dumps(body, ensure_ascii=False)
     text = " ".join(text.split())
     return text if len(text) <= limit else text[: limit - 1] + "…"
+
+
+def _recorded_response(raw: httpx.Response) -> cassette.RecordedResponse:
+    content_type = raw.headers.get("content-type", "").split(";")[0].strip().lower()
+    text = raw.text
+    body: Any = text
+    if "json" in content_type:
+        try:
+            body = json.loads(text)
+        except ValueError:
+            body = text
+    return cassette.RecordedResponse(raw.status_code, content_type, body)
+
+
+def _retry_delay(attempt: int, retry_after: str | None, jitter: Callable[[], float]) -> float:
+    if retry_after is not None:
+        try:
+            seconds = float(retry_after)
+        except ValueError:
+            pass
+        else:
+            if seconds >= 0:
+                return min(seconds, _MAX_RETRY_DELAY)
+    return min(0.5 * (2 ** (attempt - 1)) * (0.5 + jitter()), _MAX_RETRY_DELAY)
