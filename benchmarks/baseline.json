@@ -4,7 +4,7 @@
     "m3.matcher.to_have_tool_call.v1": 1.0
   },
   "m3_calls": {
-    "executions_total": 103,
+    "executions_total": 106,
     "tests_with_execution": {
       "adapters/arxiv": 6,
       "adapters/hackernews": 8,
@@ -17,7 +17,7 @@
       "adapters/world_bank": 13,
       "adapters/xkcd": 7,
       "agent": 3,
-      "core": 6
+      "core": 9
     }
   },
   "passing_tests": [
@@ -262,6 +262,9 @@
     "m3_tests/core/test_toolsets.py::test_toolsets_flag_limits_the_listing",
     "m3_tests/core/test_toolsets.py::test_unknown_toolset_exits_with_a_helpful_message",
     "m3_tests/core/test_toolsets.py::test_version_flag",
+    "m3_tests/core/test_transport.py::test_health_reports_the_tools_actually_served[None-None]",
+    "m3_tests/core/test_transport.py::test_health_reports_the_tools_actually_served[dev-dev]",
+    "m3_tests/core/test_transport.py::test_health_reports_the_tools_actually_served[fun-fun]",
     "m3_tests/core/test_transport.py::test_streamable_http_serves_the_tools_and_answers_calls",
     "m3_tests/scripts/test_benchmark.py::test_a_dip_inside_the_tolerance_is_shown_but_does_not_fail",
     "m3_tests/scripts/test_benchmark.py::test_a_failing_test_is_a_regression_and_says_how_it_failed",

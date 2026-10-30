@@ -148,10 +148,10 @@ In the JSON and TOML files, use `"args": ["keyless-mcp"]` (Cursor, VS Code, Clau
 ### Docker
 
 ```sh
-docker run -i --rm ghcr.io/sineframe/keyless-mcp
+docker run -i --rm --no-healthcheck ghcr.io/sineframe/keyless-mcp
 ```
 
-The image is published to `ghcr.io` when a release is tagged, so this works after the first release. To build it yourself, run `docker build -t keyless-mcp .` and use `keyless-mcp` as the image name. Use the same line as the server command in any client above, for example `claude mcp add keyless -- docker run -i --rm ghcr.io/sineframe/keyless-mcp`. The `-i` flag is required because the server talks over stdin and stdout.
+The image is published to `ghcr.io` when a release is tagged, so this works after the first release. To build it yourself, run `docker build -t keyless-mcp .` and use `keyless-mcp` as the image name. Use the same line as the server command in any client above, for example `claude mcp add keyless -- docker run -i --rm --no-healthcheck ghcr.io/sineframe/keyless-mcp`. The `-i` flag is required because the server talks over stdin and stdout. Disable the image's HTTP health check for stdio, which has no HTTP listener.
 
 ### Streamable HTTP
 
@@ -162,6 +162,8 @@ uv run keyless-mcp --transport http --port 8000
 ```
 
 The endpoint is `http://127.0.0.1:8000/mcp`. It binds to localhost by default. Inside a container, add `--host 0.0.0.0` and publish the port.
+
+`GET /health` returns HTTP 200 with `status`, `version`, the toolsets with registered adapters, and their total `tools` count. It only reads local process metadata; it does not check upstream API availability. The Docker health check probes this endpoint on port 8000 using Python's standard library. If you change the port, override the probe with `docker run --health-cmd`, or disable it with `--no-healthcheck`.
 
 ## Choosing toolsets
 

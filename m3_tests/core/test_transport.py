@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import socket
 import subprocess
 import sys
@@ -13,6 +14,7 @@ from collections.abc import Iterator
 import pytest
 from m3 import HTTPServer, TrustLevel
 
+from keyless_mcp.core import discover_adapters
 from m3_tests._support.servers import PROJECT_ROOT, cassette_dir
 
 pytestmark = pytest.mark.m3(suite_name="core")
@@ -25,11 +27,14 @@ def free_port() -> int:
 
 
 @pytest.fixture
-def http_server_url() -> Iterator[str]:
+def http_server_url(request) -> Iterator[str]:
     """Run ``keyless-mcp --transport http`` on a free port and yield its MCP endpoint URL."""
     port = free_port()
+    arguments = [sys.executable, "-m", "keyless_mcp", "--transport", "http", "--port", str(port)]
+    if getattr(request, "param", None) is not None:
+        arguments += ["--toolsets", request.param]
     process = subprocess.Popen(
-        [sys.executable, "-m", "keyless_mcp", "--transport", "http", "--port", str(port)],
+        arguments,
         cwd=PROJECT_ROOT,
         env={
             "PATH": "/usr/bin:/bin",
@@ -43,10 +48,11 @@ def http_server_url() -> Iterator[str]:
         deadline = time.monotonic() + 30
         while time.monotonic() < deadline:
             try:
-                urllib.request.urlopen(f"http://127.0.0.1:{port}/mcp", timeout=1)
-            except urllib.error.HTTPError:
-                break  # the server answered (it rejects a bare GET), so it is up
+                with urllib.request.urlopen(f"http://127.0.0.1:{port}/health", timeout=1):
+                    break
             except OSError:
+                if process.poll() is not None:
+                    pytest.fail(f"HTTP server exited during startup: {process.returncode}")
                 time.sleep(0.2)
         else:
             pytest.fail("HTTP server did not start within 30s")
@@ -66,3 +72,35 @@ def test_streamable_http_serves_the_tools_and_answers_calls(m3_kit, http_server_
     assert {"osv_query_package", "osv_get_vulnerability"} <= names
     assert result.is_error is False
     assert "CVE-2021-23337" in result.structured_content["aliases"]
+
+
+@pytest.mark.parametrize(
+    "http_server_url,expected_toolsets",
+    [(None, None), ("dev", "dev"), ("fun", "fun")],
+    indirect=["http_server_url"],
+)
+def test_health_reports_the_tools_actually_served(m3_kit, http_server_url, expected_toolsets):
+    from keyless_mcp import __version__
+
+    with urllib.request.urlopen(http_server_url.removesuffix("/mcp") + "/health") as response:
+        assert response.status == 200
+        assert response.headers.get_content_type() == "application/json"
+        health = json.load(response)
+    server = HTTPServer(
+        name="health-catalog", url=http_server_url, trust=TrustLevel.TRUSTED_PRIVATE
+    )
+    with m3_kit.direct(server) as client:
+        tools = client.list_all_tools()
+    expected = sorted(
+        {
+            spec.toolset
+            for spec in discover_adapters()
+            if expected_toolsets is None or spec.toolset == expected_toolsets
+        }
+    )
+    assert health == {
+        "status": "ok",
+        "version": __version__,
+        "toolsets": expected,
+        "tools": len(tools),
+    }

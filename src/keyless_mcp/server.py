@@ -5,6 +5,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from mcp.server.mcpserver import MCPServer
+from starlette.requests import Request
+from starlette.responses import JSONResponse
 
 from keyless_mcp import __version__
 from keyless_mcp.core import HttpClient, HttpConfig, LoadedAdapter, register_adapters
@@ -30,4 +32,17 @@ def build_server(
     mcp = MCPServer("keyless-mcp", instructions=INSTRUCTIONS, version=__version__)
     http = HttpClient(http_config if http_config is not None else HttpConfig.from_env())
     adapters = register_adapters(mcp, http, toolsets)
+
+    @mcp.custom_route("/health", methods=["GET"])
+    async def health(_request: Request) -> JSONResponse:
+        """Report process-local readiness without querying an upstream API."""
+        return JSONResponse(
+            {
+                "status": "ok",
+                "version": __version__,
+                "toolsets": sorted({adapter.spec.toolset for adapter in adapters}),
+                "tools": sum(len(adapter.tool_names) for adapter in adapters),
+            }
+        )
+
     return BuiltServer(mcp, http, adapters)

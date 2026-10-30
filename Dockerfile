@@ -1,10 +1,11 @@
 # keyless-mcp container image.
 #
 #   docker build -t keyless-mcp .
-#   docker run -i --rm keyless-mcp                       # MCP over stdio (the default)
+#   docker run -i --rm --no-healthcheck keyless-mcp      # MCP over stdio (the default)
 #   docker run --rm -p 8000:8000 keyless-mcp --transport http --host 0.0.0.0
 #                                                        # Streamable HTTP at http://localhost:8000/mcp
-#   docker run -i --rm -e KEYLESS_MCP_TOOLSETS=dev,geo keyless-mcp   # only some toolsets
+#   docker run -i --rm --no-healthcheck -e KEYLESS_MCP_TOOLSETS=dev,geo keyless-mcp
+#                                                        # stdio with only some toolsets
 #
 # The entrypoint is `keyless-mcp`, so anything after the image name is a keyless-mcp flag
 # (`--toolsets`, `--list-tools`, ...). Inside a container the HTTP transport must bind 0.0.0.0
@@ -47,4 +48,6 @@ ENV PATH="/app/.venv/bin:$PATH" \
 
 USER keyless
 EXPOSE 8000
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2).close()"
 ENTRYPOINT ["keyless-mcp"]
