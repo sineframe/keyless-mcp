@@ -1,0 +1,8 @@
+name: sunrise_sunset
+title: Sunrise-Sunset.org
+description: Get UTC sunrise, sunset and twilight times for a latitude, longitude and date.
+toolset: geo
+base_url: https://api.sunrise-sunset.org
+docs_url: https://sunrise-sunset.org/api/v1
+rate_limit_per_minute: 10
+author: abhinavrastogi2627
