@@ -23,9 +23,9 @@ pytestmark = pytest.mark.m3(suite_name="core")
 URL = "https://api.test/v1/thing"
 
 
-def client_with(handler, mode: HttpMode, cassette_dir: Path | None = None) -> HttpClient:
+def client_with(handler, mode: HttpMode, cassette_dir: Path | None = None, **kwargs) -> HttpClient:
     config = HttpConfig(mode=mode, cassette_dir=cassette_dir, timeout=5)
-    return HttpClient(config, transport=httpx.MockTransport(handler))
+    return HttpClient(config, transport=httpx.MockTransport(handler), **kwargs)
 
 
 def run(coro_fn):
@@ -99,14 +99,41 @@ def test_replay_and_record_require_a_cassette_directory() -> None:
 
 @pytest.mark.parametrize("status", [404, 500, 503])
 def test_http_errors_become_upstream_errors_with_the_status(status) -> None:
+    async def no_sleep(_seconds: float) -> None:
+        pass
+
     api = client_with(
-        lambda r: httpx.Response(status, json={"message": "nope"}), HttpMode.LIVE
+        lambda r: httpx.Response(status, json={"message": "nope"}),
+        HttpMode.LIVE,
+        sleep=no_sleep,
     ).for_adapter("demo", 600)
     with pytest.raises(UpstreamError) as caught:
         run(lambda: api.get_json(URL))
     assert caught.value.status == status
     assert f"HTTP {status}" in str(caught.value)
     assert "nope" in str(caught.value)
+
+
+def test_timeout_budget_starts_after_initial_rate_limit_wait() -> None:
+    calls = []
+    now = [0.0]
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
+        return httpx.Response(200, json={"ok": True})
+
+    async def sleep(seconds: float) -> None:
+        now[0] += seconds
+
+    async def request_after_queued_slot():
+        api = client_with(handler, HttpMode.LIVE, clock=lambda: now[0]).for_adapter("demo", 1)
+        api.limiter = RateLimiter(1, clock=lambda: now[0], sleep=sleep)
+        await api.limiter.acquire()
+        return await api.get_json(URL)
+
+    assert run(request_after_queued_slot) == {"ok": True}
+    assert now[0] == 60.0
+    assert len(calls) == 1
 
 
 def test_error_responses_are_recorded_so_error_paths_can_be_replayed(tmp_path) -> None:
@@ -129,12 +156,122 @@ def test_timeout_becomes_a_readable_upstream_error() -> None:
 
 
 def test_connection_failure_becomes_a_readable_upstream_error() -> None:
+    calls = []
+
     def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
         raise httpx.ConnectError("dns failure", request=request)
 
-    api = client_with(handler, HttpMode.LIVE).for_adapter("demo", 600)
-    with pytest.raises(UpstreamError, match="could not reach"):
+    async def no_sleep(_seconds: float) -> None:
+        pass
+
+    api = client_with(handler, HttpMode.LIVE, sleep=no_sleep).for_adapter("demo", 600)
+    api.limiter = RateLimiter(600, sleep=no_sleep)
+    with pytest.raises(UpstreamError, match="could not reach.*after 3 attempts"):
         run(lambda: api.get_json(URL))
+    assert len(calls) == 3
+
+
+def test_get_retries_a_transient_503_and_returns_the_success() -> None:
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
+        if len(calls) == 1:
+            return httpx.Response(503, json={"message": "busy"})
+        return httpx.Response(200, json={"ok": True})
+
+    async def no_sleep(_seconds: float) -> None:
+        pass
+
+    api = client_with(handler, HttpMode.LIVE, sleep=no_sleep).for_adapter("demo", 600)
+    api.limiter = RateLimiter(600, sleep=no_sleep)
+    assert run(lambda: api.get_json(URL)) == {"ok": True}
+    assert len(calls) == 2
+
+
+def test_get_reports_three_attempts_when_retryable_response_persists() -> None:
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
+        return httpx.Response(503, json={"message": "busy"})
+
+    async def no_sleep(_seconds: float) -> None:
+        pass
+
+    api = client_with(handler, HttpMode.LIVE, sleep=no_sleep).for_adapter("demo", 600)
+    api.limiter = RateLimiter(600, sleep=no_sleep)
+    with pytest.raises(UpstreamError, match=r"HTTP 503 after 3 attempts"):
+        run(lambda: api.get_json(URL))
+    assert len(calls) == 3
+
+
+def test_retry_after_seconds_controls_the_retry_delay() -> None:
+    calls = []
+    slept = []
+    now = [0.0]
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
+        if len(calls) == 1:
+            return httpx.Response(429, headers={"Retry-After": "2"})
+        return httpx.Response(200, json={"ok": True})
+
+    async def sleep(seconds: float) -> None:
+        slept.append(seconds)
+        now[0] += seconds
+
+    api = client_with(handler, HttpMode.LIVE, sleep=sleep, clock=lambda: now[0]).for_adapter(
+        "demo", 600
+    )
+    api.limiter = RateLimiter(600, clock=lambda: now[0], sleep=sleep)
+    assert run(lambda: api.get_json(URL)) == {"ok": True}
+    assert slept == [2.0]
+    assert len(calls) == 2
+
+
+def test_non_retryable_404_and_post_are_single_attempt() -> None:
+    get_calls = []
+
+    def get_handler(request: httpx.Request) -> httpx.Response:
+        get_calls.append(request)
+        return httpx.Response(404, json={"message": "missing"})
+
+    get_api = client_with(get_handler, HttpMode.LIVE).for_adapter("demo", 600)
+    with pytest.raises(UpstreamError, match="HTTP 404"):
+        run(lambda: get_api.get_json(URL))
+    assert len(get_calls) == 1
+
+    post_calls = []
+
+    def post_handler(request: httpx.Request) -> httpx.Response:
+        post_calls.append(request)
+        return httpx.Response(503, json={"message": "busy"})
+
+    post_api = client_with(post_handler, HttpMode.LIVE).for_adapter("demo", 600)
+    with pytest.raises(UpstreamError, match="HTTP 503"):
+        run(lambda: post_api.post_json(URL, {"query": "safe read"}))
+    assert len(post_calls) == 1
+
+
+def test_record_mode_saves_only_the_final_retry_response(tmp_path) -> None:
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request)
+        status = 503 if len(calls) == 1 else 200
+        return httpx.Response(status, json={"attempt": len(calls)})
+
+    async def no_sleep(_seconds: float) -> None:
+        pass
+
+    api = client_with(handler, HttpMode.RECORD, tmp_path, sleep=no_sleep).for_adapter("demo", 600)
+    api.limiter = RateLimiter(600, sleep=no_sleep)
+    assert run(lambda: api.get_json(URL)) == {"attempt": 2}
+    cassette_files = list(tmp_path.glob("*.json"))
+    assert len(cassette_files) == 1
+    assert '"status": 200' in cassette_files[0].read_text(encoding="utf-8")
 
 
 def test_invalid_json_becomes_a_readable_upstream_error() -> None:
