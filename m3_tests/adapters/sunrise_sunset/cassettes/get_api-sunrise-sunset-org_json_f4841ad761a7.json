@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.sunrise-sunset.org/json?date=2020-01-15&formatted=0&lat=36.72016&lng=-4.42034",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "results": {
+        "astronomical_twilight_begin": "2020-01-15T05:58:16+00:00",
+        "astronomical_twilight_end": "2020-01-15T18:55:33+00:00",
+        "civil_twilight_begin": "2020-01-15T07:01:10+00:00",
+        "civil_twilight_end": "2020-01-15T17:52:39+00:00",
+        "day_length": 35715,
+        "nautical_twilight_begin": "2020-01-15T06:29:21+00:00",
+        "nautical_twilight_end": "2020-01-15T18:24:28+00:00",
+        "solar_noon": "2020-01-15T12:26:54+00:00",
+        "sunrise": "2020-01-15T07:29:17+00:00",
+        "sunset": "2020-01-15T17:24:32+00:00"
+      },
+      "status": "OK",
+      "tzid": "UTC"
+    }
+  }
+}

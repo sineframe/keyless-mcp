@@ -6,7 +6,7 @@ Every adapter wraps a free public API that needs no key. Enable a group of them 
 `--toolsets` (or `KEYLESS_MCP_TOOLSETS`); the default is all. To add one, see
 [docs/adapter-contract.md](docs/adapter-contract.md).
 
-**10 adapters, 20 tools.**
+**11 adapters, 21 tools.**
 
 Toolsets with no adapters yet (they are valid for `--toolsets` and serve no tools until the first adapter lands): `finance`.
 
@@ -36,6 +36,7 @@ Places and the world: weather, countries.
 | Adapter | Tools | API docs | Author | Agent pass rate (codex) |
 |---|---|---|---|---|
 | **Open-Meteo** (`open_meteo`)<br>Daily weather forecasts for any latitude and longitude, and place-name geocoding to find coordinates. | `open_meteo_forecast`<br>`open_meteo_geocode` | [docs](https://open-meteo.com/en/docs) | [sineframe](https://github.com/sineframe) | 1/1 |
+| **Sunrise-Sunset.org** (`sunrise_sunset`)<br>Get UTC sunrise, sunset and twilight times for a latitude, longitude and date. | `sunrise_sunset_get_times` | [docs](https://sunrise-sunset.org/api/v1) | [abhinavrastogi2627](https://github.com/abhinavrastogi2627) | - |
 | **World Bank countries** (`world_bank`)<br>Look up countries by name or ISO code for capital, region, income level, coordinates, latest population and flag emoji, from World Bank open data. | `world_bank_country_search`<br>`world_bank_country_by_code` | [docs](https://datahelpdesk.worldbank.org/knowledgebase/articles/898590-country-api-queries) | [sineframe](https://github.com/sineframe) | 1/1 |
 
 ## news
