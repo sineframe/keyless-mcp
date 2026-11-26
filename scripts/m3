@@ -1,4 +1,9 @@
 #!/bin/sh
 # Pinned M3 CLI for this project (a global `m3` may be a different version).
-# The CLI version must match the `sf-m3` version in pyproject.toml exactly.
-exec uvx --from "sf-m3-cli==${M3_CLI_VERSION:-0.2.40}" m3 "$@"
+# The CLI version must match the installed `sf-m3` SDK exactly, so read it from the
+# locked environment the same way CI does. Set M3_CLI_VERSION to override.
+if [ -z "${M3_CLI_VERSION:-}" ]; then
+  M3_CLI_VERSION=$(uv run --project "$(dirname "$0")/.." --locked --quiet python -c \
+    'from importlib.metadata import version; print(version("sf-m3"))') || exit 1
+fi
+exec uvx --from "sf-m3-cli==${M3_CLI_VERSION}" m3 "$@"
