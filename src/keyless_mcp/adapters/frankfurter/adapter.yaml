@@ -1,0 +1,8 @@
+name: frankfurter
+title: Frankfurter exchange rates
+description: Get latest and historical currency exchange reference rates, short time series and supported currencies.
+toolset: finance
+base_url: https://api.frankfurter.dev/v1
+docs_url: https://frankfurter.dev/v1/
+rate_limit_per_minute: 30
+author: abhinavrastogi2627

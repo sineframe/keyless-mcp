@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.frankfurter.dev/v1/2024-01-02..2024-01-04?base=EUR&symbols=USD",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "amount": 1.0,
+      "base": "EUR",
+      "end_date": "2024-01-04",
+      "rates": {
+        "2024-01-02": {
+          "USD": 1.0956
+        },
+        "2024-01-03": {
+          "USD": 1.0919
+        },
+        "2024-01-04": {
+          "USD": 1.0953
+        }
+      },
+      "start_date": "2024-01-02"
+    }
+  }
+}
