@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.frankfurter.dev/v1/latest?base=ZZZ",
+    "body": null
+  },
+  "response": {
+    "status": 404,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "message": "not found"
+    }
+  }
+}

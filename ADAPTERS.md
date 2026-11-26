@@ -6,9 +6,7 @@ Every adapter wraps a free public API that needs no key. Enable a group of them 
 `--toolsets` (or `KEYLESS_MCP_TOOLSETS`); the default is all. To add one, see
 [docs/adapter-contract.md](docs/adapter-contract.md).
 
-**11 adapters, 21 tools.**
-
-Toolsets with no adapters yet (they are valid for `--toolsets` and serve no tools until the first adapter lands): `finance`.
+**12 adapters, 24 tools.**
 
 ## science
 
@@ -46,6 +44,14 @@ News and community feeds.
 | Adapter | Tools | API docs | Author | Agent pass rate (codex) |
 |---|---|---|---|---|
 | **Hacker News** (`hackernews`)<br>Read the current top stories on Hacker News and fetch any story, comment, job or poll by id (official Firebase API). | `hackernews_top_stories`<br>`hackernews_get_item` | [docs](https://github.com/HackerNews/API) | [sineframe](https://github.com/sineframe) | 1/1 |
+
+## finance
+
+Money and economic data: exchange rates, public finance, inflation.
+
+| Adapter | Tools | API docs | Author | Agent pass rate (codex) |
+|---|---|---|---|---|
+| **Frankfurter exchange rates** (`frankfurter`)<br>Get latest and historical currency exchange reference rates, short time series and supported currencies. | `frankfurter_get_rates`<br>`frankfurter_get_time_series`<br>`frankfurter_list_currencies` | [docs](https://frankfurter.dev/v1/) | [abhinavrastogi2627](https://github.com/abhinavrastogi2627) | - |
 
 ## reference
 
