@@ -1,10 +1,10 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.14'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'emscripten'",
-    "(python_full_version < '3.14' and sys_platform != 'emscripten') or (python_full_version < '3.12' and sys_platform == 'emscripten')",
+    "python_full_version < '3.12' or (python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'emscripten')",
 ]
 
 [[package]]
@@ -622,7 +622,7 @@ dev = [
     { name = "pytest-timeout", specifier = ">=2.4,<3" },
     { name = "pytest-xdist", specifier = ">=3" },
     { name = "ruff", specifier = ">=0.6" },
-    { name = "sf-m3", extras = ["pytest", "storage", "judge"], specifier = "==0.3.1" },
+    { name = "sf-m3", extras = ["pytest", "storage", "judge"], specifier = "==0.3.6" },
 ]
 
 [[package]]
@@ -1215,7 +1215,7 @@ wheels = [
 
 [[package]]
 name = "sf-m3"
-version = "0.3.1"
+version = "0.3.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "agent-client-protocol" },
@@ -1233,7 +1233,7 @@ dependencies = [
     { name = "uvicorn", extra = ["standard"] },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ea/20/ebf95771ba8767f5c8fc0bb27beb8b203c8693a4e455852e21716a2e8caa/sf_m3-0.3.1-py3-none-any.whl", hash = "sha256:b01ad99395ad7dbe26682d2b4d67655dd4f7f613d932c92d72349f015db41eaa", size = 725248, upload-time = "2026-10-11T10:40:05.887Z" },
+    { url = "https://files.pythonhosted.org/packages/78/9f/9fe2194bc5aa10b07fbeec3b27ceffe99cb73e76cce6d47f0c2571fdc846/sf_m3-0.3.6-py3-none-any.whl", hash = "sha256:30942e17c6636efe417fc0a60a34959cb4b8d058eabdee924ccb15a1c993f912", size = 756613, upload-time = "2026-11-26T01:04:38.544Z" },
 ]
 
 [package.optional-dependencies]
