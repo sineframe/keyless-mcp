@@ -6,7 +6,7 @@ Every adapter wraps a free public API that needs no key. Enable a group of them 
 `--toolsets` (or `KEYLESS_MCP_TOOLSETS`); the default is all. To add one, see
 [docs/adapter-contract.md](docs/adapter-contract.md).
 
-**12 adapters, 24 tools.**
+**13 adapters, 26 tools.**
 
 ## science
 
@@ -23,6 +23,7 @@ Developer data: package registries and vulnerability advisories.
 
 | Adapter | Tools | API docs | Author | Agent pass rate (codex) |
 |---|---|---|---|---|
+| **endoflife.date** (`endoflife`)<br>Find software release cycles, support and end-of-life dates, and available product slugs. | `endoflife_get_product`<br>`endoflife_list_products` | [docs](https://endoflife.date/docs/api/v1/) | [abhinavrastogi2627](https://github.com/abhinavrastogi2627) | - |
 | **npm registry** (`npm`)<br>Look up JavaScript packages on the npm registry (latest version, license, repository, maintainers, last publish) and search packages by keyword. | `npm_get_package`<br>`npm_search` | [docs](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md) | [sineframe](https://github.com/sineframe) | 1/1 |
 | **OSV (Open Source Vulnerabilities)** (`osv`)<br>Look up known security vulnerabilities for open-source packages (PyPI, npm, Go, crates.io, Maven and more) and fetch advisory details. | `osv_query_package`<br>`osv_get_vulnerability` | [docs](https://google.github.io/osv.dev/api/) | [sineframe](https://github.com/sineframe) | 2/2 |
 | **PyPI** (`pypi`)<br>Look up Python packages on PyPI, the Python Package Index; latest version, license, supported Python versions, links and per-release details. | `pypi_get_package`<br>`pypi_get_release` | [docs](https://docs.pypi.org/api/json/) | [sineframe](https://github.com/sineframe) | 1/1 |

@@ -1,0 +1,6045 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://endoflife.date/api/v1/products/",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "generated_at": "2026-11-27T00:08:31+00:00",
+      "result": [
+        {
+          "aliases": [
+            "adonis"
+          ],
+          "category": "framework",
+          "label": "AdonisJS",
+          "name": "adonisjs",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/adonisjs"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Akeneo PIM",
+          "name": "akeneo-pim",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/akeneo-pim"
+        },
+        {
+          "aliases": [
+            "ack"
+          ],
+          "category": "service",
+          "label": "Alibaba ACK",
+          "name": "alibaba-ack",
+          "tags": [
+            "alibaba",
+            "managed-kubernetes",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/alibaba-ack"
+        },
+        {
+          "aliases": [
+            "dragonwell"
+          ],
+          "category": "lang",
+          "label": "Alibaba Dragonwell",
+          "name": "alibaba-dragonwell",
+          "tags": [
+            "alibaba",
+            "java-distribution",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/alibaba-dragonwell"
+        },
+        {
+          "aliases": [
+            "alma-linux",
+            "alma"
+          ],
+          "category": "os",
+          "label": "AlmaLinux OS",
+          "name": "almalinux",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/almalinux"
+        },
+        {
+          "aliases": [
+            "alpine",
+            "alpinelinux"
+          ],
+          "category": "os",
+          "label": "Alpine Linux",
+          "name": "alpine-linux",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/alpine-linux"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon Aurora MySQL",
+          "name": "amazon-aurora-mysql",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-aurora-mysql"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon Aurora PostgreSQL",
+          "name": "amazon-aurora-postgresql",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-aurora-postgresql"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Amazon CDK",
+          "name": "amazon-cdk",
+          "tags": [
+            "amazon",
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-cdk"
+        },
+        {
+          "aliases": [
+            "corretto"
+          ],
+          "category": "lang",
+          "label": "Amazon Corretto",
+          "name": "amazon-corretto",
+          "tags": [
+            "amazon",
+            "java-distribution",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-corretto"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon DocumentDB",
+          "name": "amazon-documentdb",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-documentdb"
+        },
+        {
+          "aliases": [
+            "eks",
+            "amazon-elastic-kubernetes-service"
+          ],
+          "category": "service",
+          "label": "Amazon EKS",
+          "name": "amazon-eks",
+          "tags": [
+            "amazon",
+            "managed-kubernetes",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-eks"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon ElastiCache for Redis OSS",
+          "name": "amazon-elasticache-redis",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-elasticache-redis"
+        },
+        {
+          "aliases": [
+            "amazon-elasticsearch-service",
+            "aws-elasticsearch"
+          ],
+          "category": "service",
+          "label": "Amazon Elasticsearch",
+          "name": "amazon-elasticsearch",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-elasticsearch"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon Glue",
+          "name": "amazon-glue",
+          "tags": [
+            "amazon",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-glue"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Amazon Linux",
+          "name": "amazon-linux",
+          "tags": [
+            "amazon",
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-linux"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon MQ for ActiveMQ",
+          "name": "amazon-mq-activemq",
+          "tags": [
+            "amazon",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-mq-activemq"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon MQ for RabbitMQ",
+          "name": "amazon-mq-rabbitmq",
+          "tags": [
+            "amazon",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-mq-rabbitmq"
+        },
+        {
+          "aliases": [
+            "msk",
+            "managed-streaming-for-apache-kafka",
+            "aws-msk"
+          ],
+          "category": "service",
+          "label": "Amazon MSK",
+          "name": "amazon-msk",
+          "tags": [
+            "amazon",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-msk"
+        },
+        {
+          "aliases": [
+            "aws-neptune",
+            "neptune"
+          ],
+          "category": "service",
+          "label": "Amazon Neptune",
+          "name": "amazon-neptune",
+          "tags": [
+            "amazon",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-neptune"
+        },
+        {
+          "aliases": [
+            "amazon-opensearch-service",
+            "aws-opensearch"
+          ],
+          "category": "service",
+          "label": "Amazon OpenSearch",
+          "name": "amazon-opensearch",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-opensearch"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon RDS for MariaDB",
+          "name": "amazon-rds-mariadb",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-rds-mariadb"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon RDS for MySQL",
+          "name": "amazon-rds-mysql",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-rds-mysql"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Amazon RDS for PostgreSQL",
+          "name": "amazon-rds-postgresql",
+          "tags": [
+            "amazon",
+            "database",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/amazon-rds-postgresql"
+        },
+        {
+          "aliases": [
+            "aosp",
+            "androidos"
+          ],
+          "category": "os",
+          "label": "Android OS",
+          "name": "android",
+          "tags": [
+            "google",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/android"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Angular",
+          "name": "angular",
+          "tags": [
+            "framework",
+            "google",
+            "herodevs",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/angular"
+        },
+        {
+          "aliases": [
+            "angular-js"
+          ],
+          "category": "framework",
+          "label": "AngularJS",
+          "name": "angularjs",
+          "tags": [
+            "discontinued",
+            "framework",
+            "google",
+            "herodevs",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/angularjs"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Ansible-core",
+          "name": "ansible-core",
+          "tags": [
+            "framework",
+            "python-runtime",
+            "red-hat"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ansible-core"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Ansible",
+          "name": "ansible",
+          "tags": [
+            "app",
+            "python-runtime",
+            "red-hat"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ansible"
+        },
+        {
+          "aliases": [
+            "anthropic-claude"
+          ],
+          "category": "service",
+          "label": "Anthropic Claude",
+          "name": "claude",
+          "tags": [
+            "llm",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/claude"
+        },
+        {
+          "aliases": [
+            "antixlinux",
+            "antix-linux"
+          ],
+          "category": "os",
+          "label": "antiX Linux",
+          "name": "antix",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/antix"
+        },
+        {
+          "aliases": [
+            "activemq"
+          ],
+          "category": "server-app",
+          "label": "Apache ActiveMQ Classic",
+          "name": "apache-activemq",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-activemq"
+        },
+        {
+          "aliases": [
+            "airflow"
+          ],
+          "category": "framework",
+          "label": "Apache Airflow",
+          "name": "apache-airflow",
+          "tags": [
+            "apache",
+            "framework",
+            "python-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-airflow"
+        },
+        {
+          "aliases": [
+            "apache-ant"
+          ],
+          "category": "app",
+          "label": "Apache Ant",
+          "name": "ant",
+          "tags": [
+            "apache",
+            "app",
+            "build-tool",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ant"
+        },
+        {
+          "aliases": [
+            "apisix"
+          ],
+          "category": "server-app",
+          "label": "Apache APISIX",
+          "name": "apache-apisix",
+          "tags": [
+            "apache",
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-apisix"
+        },
+        {
+          "aliases": [
+            "apache-activemq-artemis",
+            "activemq-artemis"
+          ],
+          "category": "server-app",
+          "label": "Apache Artemis",
+          "name": "apache-artemis",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-artemis"
+        },
+        {
+          "aliases": [
+            "camel",
+            "camel-lang"
+          ],
+          "category": "framework",
+          "label": "Apache Camel",
+          "name": "apache-camel",
+          "tags": [
+            "apache",
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-camel"
+        },
+        {
+          "aliases": [
+            "cassandra"
+          ],
+          "category": "database",
+          "label": "Apache Cassandra",
+          "name": "apache-cassandra",
+          "tags": [
+            "apache",
+            "database",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-cassandra"
+        },
+        {
+          "aliases": [
+            "celeborn"
+          ],
+          "category": "server-app",
+          "label": "Apache Celeborn",
+          "name": "apache-celeborn",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-celeborn"
+        },
+        {
+          "aliases": [
+            "couchdb"
+          ],
+          "category": "database",
+          "label": "Apache CouchDB",
+          "name": "apache-couchdb",
+          "tags": [
+            "apache",
+            "database",
+            "erlang-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-couchdb"
+        },
+        {
+          "aliases": [
+            "flink"
+          ],
+          "category": "server-app",
+          "label": "Apache Flink",
+          "name": "apache-flink",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-flink"
+        },
+        {
+          "aliases": [
+            "groovy",
+            "groovy-lang"
+          ],
+          "category": "lang",
+          "label": "Apache Groovy",
+          "name": "apache-groovy",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-groovy"
+        },
+        {
+          "aliases": [
+            "hadoop"
+          ],
+          "category": "database",
+          "label": "Apache Hadoop",
+          "name": "apache-hadoop",
+          "tags": [
+            "apache",
+            "database",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-hadoop"
+        },
+        {
+          "aliases": [
+            "hop"
+          ],
+          "category": "app",
+          "label": "Apache Hop",
+          "name": "apache-hop",
+          "tags": [
+            "apache",
+            "app",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-hop"
+        },
+        {
+          "aliases": [
+            "apache",
+            "httpd"
+          ],
+          "category": "server-app",
+          "label": "Apache HTTP Server",
+          "name": "apache-http-server",
+          "tags": [
+            "apache",
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-http-server"
+        },
+        {
+          "aliases": [
+            "kafka"
+          ],
+          "category": "server-app",
+          "label": "Apache Kafka",
+          "name": "apache-kafka",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-kafka"
+        },
+        {
+          "aliases": [
+            "lucene"
+          ],
+          "category": "framework",
+          "label": "Apache Lucene",
+          "name": "apache-lucene",
+          "tags": [
+            "apache",
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-lucene"
+        },
+        {
+          "aliases": [
+            "maven",
+            "mvn"
+          ],
+          "category": "app",
+          "label": "Apache Maven",
+          "name": "apache-maven",
+          "tags": [
+            "apache",
+            "app",
+            "build-tool",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-maven"
+        },
+        {
+          "aliases": [
+            "nifi"
+          ],
+          "category": "server-app",
+          "label": "Apache NiFi",
+          "name": "apache-nifi",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-nifi"
+        },
+        {
+          "aliases": [
+            "pulsar"
+          ],
+          "category": "server-app",
+          "label": "Apache Pulsar",
+          "name": "apache-pulsar",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-pulsar"
+        },
+        {
+          "aliases": [
+            "spark"
+          ],
+          "category": "server-app",
+          "label": "Apache Spark",
+          "name": "apache-spark",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-spark"
+        },
+        {
+          "aliases": [
+            "struts"
+          ],
+          "category": "framework",
+          "label": "Apache Struts",
+          "name": "apache-struts",
+          "tags": [
+            "apache",
+            "framework",
+            "herodevs",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-struts"
+        },
+        {
+          "aliases": [
+            "svn",
+            "subversion"
+          ],
+          "category": "server-app",
+          "label": "Apache Subversion",
+          "name": "apache-subversion",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apache-subversion"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "API Platform",
+          "name": "api-platform",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/api-platform"
+        },
+        {
+          "aliases": [
+            "apple-tvos"
+          ],
+          "category": "os",
+          "label": "Apple tvOS",
+          "name": "tvos",
+          "tags": [
+            "apple",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/tvos"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Apple Watch",
+          "name": "apple-watch",
+          "tags": [
+            "apple",
+            "device",
+            "watch"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/apple-watch"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "ArangoDB",
+          "name": "arangodb",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/arangodb"
+        },
+        {
+          "aliases": [
+            "argocd",
+            "argo"
+          ],
+          "category": "server-app",
+          "label": "Argo CD",
+          "name": "argo-cd",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/argo-cd"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Argo Workflows",
+          "name": "argo-workflows",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/argo-workflows"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Artifactory",
+          "name": "artifactory",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/artifactory"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "authentik",
+          "name": "authentik",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/authentik"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "AWS Lambda",
+          "name": "aws-lambda",
+          "tags": [
+            "amazon",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/aws-lambda"
+        },
+        {
+          "aliases": [
+            "zulu"
+          ],
+          "category": "lang",
+          "label": "Azul Zulu",
+          "name": "azul-zulu",
+          "tags": [
+            "azul",
+            "java-distribution",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/azul-zulu"
+        },
+        {
+          "aliases": [
+            "azure-mysql"
+          ],
+          "category": "service",
+          "label": "Azure Database for MySQL",
+          "name": "azure-database-for-mysql",
+          "tags": [
+            "database",
+            "microsoft",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/azure-database-for-mysql"
+        },
+        {
+          "aliases": [
+            "azure-postgresql"
+          ],
+          "category": "service",
+          "label": "Azure Database for PostgreSQL",
+          "name": "azure-database-for-postgresql",
+          "tags": [
+            "database",
+            "microsoft",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/azure-database-for-postgresql"
+        },
+        {
+          "aliases": [
+            "tfs",
+            "azure-devops",
+            "team-foundation-server"
+          ],
+          "category": "server-app",
+          "label": "Azure DevOps Server",
+          "name": "azure-devops-server",
+          "tags": [
+            "microsoft",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/azure-devops-server"
+        },
+        {
+          "aliases": [
+            "aks"
+          ],
+          "category": "service",
+          "label": "Azure Kubernetes Service",
+          "name": "azure-kubernetes-service",
+          "tags": [
+            "managed-kubernetes",
+            "microsoft",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/azure-kubernetes-service"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Backdrop",
+          "name": "backdrop",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/backdrop"
+        },
+        {
+          "aliases": [
+            "atlassian-bamboo"
+          ],
+          "category": "server-app",
+          "label": "Bamboo",
+          "name": "bamboo",
+          "tags": [
+            "atlassian",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bamboo"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Bazel",
+          "name": "bazel",
+          "tags": [
+            "app",
+            "build-tool",
+            "google",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bazel"
+        },
+        {
+          "aliases": [
+            "elastic-beats",
+            "filebeat",
+            "metricbeat",
+            "packetbeat",
+            "winlogbeat",
+            "auditbeat",
+            "heartbeat",
+            "functionbeat"
+          ],
+          "category": "server-app",
+          "label": "Elastic Beats",
+          "name": "beats",
+          "tags": [
+            "elastic",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/beats"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Behat",
+          "name": "behat",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/behat"
+        },
+        {
+          "aliases": [
+            "liberica"
+          ],
+          "category": "lang",
+          "label": "Bellsoft Liberica JDK",
+          "name": "bellsoft-liberica",
+          "tags": [
+            "bellsoft",
+            "java-distribution",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bellsoft-liberica"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "BIG-IP",
+          "name": "big-ip",
+          "tags": [
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/big-ip"
+        },
+        {
+          "aliases": [
+            "bbb"
+          ],
+          "category": "server-app",
+          "label": "BigBlueButton",
+          "name": "bigbluebutton",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bigbluebutton"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "BIND 9",
+          "name": "bind-9",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bind-9"
+        },
+        {
+          "aliases": [
+            "atlassian-bitbucket"
+          ],
+          "category": "server-app",
+          "label": "Bitbucket",
+          "name": "bitbucket",
+          "tags": [
+            "atlassian",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bitbucket"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Bitcoin Core",
+          "name": "bitcoin-core",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bitcoin-core"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Blender",
+          "name": "blender",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/blender"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Bootstrap",
+          "name": "bootstrap",
+          "tags": [
+            "css-runtime",
+            "framework",
+            "herodevs",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bootstrap"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Hashicorp Boundary",
+          "name": "boundary",
+          "tags": [
+            "hashicorp",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/boundary"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Bun",
+          "name": "bun",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/bun"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Cachet",
+          "name": "cachet",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cachet"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Caddy",
+          "name": "caddy",
+          "tags": [
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/caddy"
+        },
+        {
+          "aliases": [
+            "cake-php",
+            "cake"
+          ],
+          "category": "framework",
+          "label": "CakePHP",
+          "name": "cakephp",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cakephp"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Calico",
+          "name": "calico",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/calico"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "CentOS Stream",
+          "name": "centos-stream",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/centos-stream"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "CentOS",
+          "name": "centos",
+          "tags": [
+            "discontinued",
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/centos"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Centreon",
+          "name": "centreon",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/centreon"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Ceph",
+          "name": "ceph",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ceph"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "cert-manager",
+          "name": "cert-manager",
+          "tags": [
+            "app",
+            "cncf",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cert-manager"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "CFEngine",
+          "name": "cfengine",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cfengine"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Checkmk",
+          "name": "checkmk",
+          "tags": [
+            "monitoring",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/checkmk"
+        },
+        {
+          "aliases": [
+            "chef-client"
+          ],
+          "category": "app",
+          "label": "Chef Infra Client",
+          "name": "chef-infra-client",
+          "tags": [
+            "app",
+            "progress",
+            "ruby-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/chef-infra-client"
+        },
+        {
+          "aliases": [
+            "chef-server"
+          ],
+          "category": "server-app",
+          "label": "Chef Infra Server",
+          "name": "chef-infra-server",
+          "tags": [
+            "erlang-runtime",
+            "progress",
+            "ruby-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/chef-infra-server"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Chef InSpec",
+          "name": "chef-inspec",
+          "tags": [
+            "app",
+            "progress",
+            "ruby-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/chef-inspec"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Chef Supermarket",
+          "name": "chef-supermarket",
+          "tags": [
+            "progress",
+            "ruby-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/chef-supermarket"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Chef Workstation",
+          "name": "chef-workstation",
+          "tags": [
+            "app",
+            "progress",
+            "ruby-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/chef-workstation"
+        },
+        {
+          "aliases": [
+            "google-chrome"
+          ],
+          "category": "app",
+          "label": "Google Chrome",
+          "name": "chrome",
+          "tags": [
+            "app",
+            "google",
+            "web-browser"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/chrome"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Google Chromecast",
+          "name": "chromecast",
+          "tags": [
+            "device",
+            "google"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/chromecast"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Cilium",
+          "name": "cilium",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cilium"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Cisco IOS XE",
+          "name": "cisco-ios-xe",
+          "tags": [
+            "cisco",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cisco-ios-xe"
+        },
+        {
+          "aliases": [
+            "citrixvad",
+            "cvad",
+            "citrix",
+            "citrix-apps-desktops"
+          ],
+          "category": "app",
+          "label": "Citrix Virtual Apps and Desktops",
+          "name": "citrix-vad",
+          "tags": [
+            "app",
+            "citrix"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/citrix-vad"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "CKEditor",
+          "name": "ckeditor",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ckeditor"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "ClamAV",
+          "name": "clamav",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/clamav"
+        },
+        {
+          "aliases": [
+            "clearlinux"
+          ],
+          "category": "os",
+          "label": "Clear Linux",
+          "name": "clear-linux",
+          "tags": [
+            "discontinued",
+            "intel",
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/clear-linux"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "ClickHouse",
+          "name": "clickhouse",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/clickhouse"
+        },
+        {
+          "aliases": [
+            "cloud-sql-proxy"
+          ],
+          "category": "app",
+          "label": "Cloud SQL Auth Proxy",
+          "name": "cloud-sql-auth-proxy",
+          "tags": [
+            "app",
+            "google"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cloud-sql-auth-proxy"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "cnspec",
+          "name": "cnspec",
+          "tags": [
+            "app",
+            "mondoo"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cnspec"
+        },
+        {
+          "aliases": [
+            "cockroach",
+            "crdb"
+          ],
+          "category": "database",
+          "label": "CockroachDB",
+          "name": "cockroachdb",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cockroachdb"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Coder",
+          "name": "coder",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/coder"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Adobe ColdFusion",
+          "name": "coldfusion",
+          "tags": [
+            "adobe",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/coldfusion"
+        },
+        {
+          "aliases": [
+            "commvault-backup"
+          ],
+          "category": "app",
+          "label": "Commvault",
+          "name": "commvault",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/commvault"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Composer",
+          "name": "composer",
+          "tags": [
+            "app",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/composer"
+        },
+        {
+          "aliases": [
+            "concrete"
+          ],
+          "category": "server-app",
+          "label": "Concrete CMS",
+          "name": "concrete-cms",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/concrete-cms"
+        },
+        {
+          "aliases": [
+            "atlassian-confluence"
+          ],
+          "category": "server-app",
+          "label": "Confluence",
+          "name": "confluence",
+          "tags": [
+            "atlassian",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/confluence"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Hashicorp Consul",
+          "name": "consul",
+          "tags": [
+            "hashicorp",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/consul"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "containerd",
+          "name": "containerd",
+          "tags": [
+            "app",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/containerd"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Contao",
+          "name": "contao",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/contao"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Contour",
+          "name": "contour",
+          "tags": [
+            "cncf",
+            "kubernetes",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/contour"
+        },
+        {
+          "aliases": [
+            "bmccontrolm",
+            "ctrlm"
+          ],
+          "category": "server-app",
+          "label": "Control-M",
+          "name": "controlm",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/controlm"
+        },
+        {
+          "aliases": [
+            "google-cos",
+            "container-optimized-os"
+          ],
+          "category": "os",
+          "label": "Google Container-Optimized OS (COS)",
+          "name": "cos",
+          "tags": [
+            "google",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cos"
+        },
+        {
+          "aliases": [
+            "couchbase"
+          ],
+          "category": "database",
+          "label": "Couchbase Server",
+          "name": "couchbase-server",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/couchbase-server"
+        },
+        {
+          "aliases": [
+            "craftcms",
+            "craft"
+          ],
+          "category": "server-app",
+          "label": "Craft CMS",
+          "name": "craft-cms",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/craft-cms"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Dapr",
+          "name": "dapr",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/dapr"
+        },
+        {
+          "aliases": [
+            "dbt"
+          ],
+          "category": "app",
+          "label": "dbt Core",
+          "name": "dbt-core",
+          "tags": [
+            "app",
+            "python-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/dbt-core"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "DaoCloud Enterprise",
+          "name": "dce",
+          "tags": [
+            "kubernetes",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/dce"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Debian",
+          "name": "debian",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/debian"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Deno",
+          "name": "deno",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/deno"
+        },
+        {
+          "aliases": [
+            "dependencytrack"
+          ],
+          "category": "server-app",
+          "label": "Dependency-Track",
+          "name": "dependency-track",
+          "tags": [
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/dependency-track"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Devuan",
+          "name": "devuan",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/devuan"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Discourse",
+          "name": "discourse",
+          "tags": [
+            "javascript-runtime",
+            "ruby-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/discourse"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Django",
+          "name": "django",
+          "tags": [
+            "framework",
+            "python-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/django"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Docker Engine",
+          "name": "docker-engine",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/docker-engine"
+        },
+        {
+          "aliases": [
+            "dotnetcore"
+          ],
+          "category": "framework",
+          "label": "Microsoft .NET",
+          "name": "dotnet",
+          "tags": [
+            "framework",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/dotnet"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Microsoft .NET Framework",
+          "name": "dotnetfx",
+          "tags": [
+            "framework",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/dotnetfx"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Dovecot",
+          "name": "dovecot",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/dovecot"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Dropwizard",
+          "name": "dropwizard",
+          "tags": [
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/dropwizard"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Drupal",
+          "name": "drupal",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/drupal"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Drush",
+          "name": "drush",
+          "tags": [
+            "app",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/drush"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "DuckDB",
+          "name": "duckdb",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/duckdb"
+        },
+        {
+          "aliases": [
+            "jetty"
+          ],
+          "category": "server-app",
+          "label": "Eclipse Jetty",
+          "name": "eclipse-jetty",
+          "tags": [
+            "eclipse",
+            "java-runtime",
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/eclipse-jetty"
+        },
+        {
+          "aliases": [
+            "temurin"
+          ],
+          "category": "lang",
+          "label": "Eclipse Temurin",
+          "name": "eclipse-temurin",
+          "tags": [
+            "eclipse",
+            "java-distribution",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/eclipse-temurin"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "Elasticsearch",
+          "name": "elasticsearch",
+          "tags": [
+            "database",
+            "elastic",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/elasticsearch"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Electron",
+          "name": "electron",
+          "tags": [
+            "framework",
+            "javascript-runtime",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/electron"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Elixir",
+          "name": "elixir",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/elixir"
+        },
+        {
+          "aliases": [
+            "ember"
+          ],
+          "category": "framework",
+          "label": "Ember",
+          "name": "emberjs",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/emberjs"
+        },
+        {
+          "aliases": [
+            "envoy-proxy"
+          ],
+          "category": "server-app",
+          "label": "Envoy",
+          "name": "envoy",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/envoy"
+        },
+        {
+          "aliases": [
+            "erlang-otp"
+          ],
+          "category": "lang",
+          "label": "Erlang",
+          "name": "erlang",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/erlang"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "ESLint",
+          "name": "eslint",
+          "tags": [
+            "app",
+            "build-tool",
+            "herodevs",
+            "javascript-runtime",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/eslint"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "etcd",
+          "name": "etcd",
+          "tags": [
+            "cncf",
+            "database",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/etcd"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "EuroLinux",
+          "name": "eurolinux",
+          "tags": [
+            "discontinued",
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/eurolinux"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Exim",
+          "name": "exim",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/exim"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Express",
+          "name": "express",
+          "tags": [
+            "framework",
+            "herodevs",
+            "javascript-runtime",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/express"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "ExternalDNS",
+          "name": "external-dns",
+          "tags": [
+            "cncf",
+            "kubernetes",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/external-dns"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Fairphone",
+          "name": "fairphone",
+          "tags": [
+            "device",
+            "mobile-phone"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/fairphone"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Fedora Linux",
+          "name": "fedora",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/fedora"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "FFmpeg",
+          "name": "ffmpeg",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ffmpeg"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "FileMaker Platform",
+          "name": "filemaker",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/filemaker"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Firefox",
+          "name": "firefox",
+          "tags": [
+            "app",
+            "mozilla",
+            "web-browser"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/firefox"
+        },
+        {
+          "aliases": [
+            "fluentbit"
+          ],
+          "category": "server-app",
+          "label": "Fluent Bit",
+          "name": "fluent-bit",
+          "tags": [
+            "cncf",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/fluent-bit"
+        },
+        {
+          "aliases": [
+            "flux2",
+            "fluxcd"
+          ],
+          "category": "server-app",
+          "label": "Flux",
+          "name": "flux",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/flux"
+        },
+        {
+          "aliases": [
+            "fontawesome"
+          ],
+          "category": "framework",
+          "label": "Font Awesome",
+          "name": "font-awesome",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/font-awesome"
+        },
+        {
+          "aliases": [
+            "theforeman",
+            "the-foreman"
+          ],
+          "category": "server-app",
+          "label": "Foreman",
+          "name": "foreman",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/foreman"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Forgejo",
+          "name": "forgejo",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/forgejo"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "FortiOS",
+          "name": "fortios",
+          "tags": [
+            "fortinet",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/fortios"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "FoundationDB",
+          "name": "foundationdb",
+          "tags": [
+            "apple",
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/foundationdb"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "FreeBSD",
+          "name": "freebsd",
+          "tags": [
+            "bsd-distribution",
+            "os",
+            "unix-distribution"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/freebsd"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Freedesktop SDK",
+          "name": "freedesktop-sdk",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/freedesktop-sdk"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Gatekeeper",
+          "name": "gatekeeper",
+          "tags": [
+            "cncf",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/gatekeeper"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "GeoServer",
+          "name": "geoserver",
+          "tags": [
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/geoserver"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Gerrit",
+          "name": "gerrit",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/gerrit"
+        },
+        {
+          "aliases": [
+            "haskell"
+          ],
+          "category": "lang",
+          "label": "Glasgow Haskell Compiler (GHC)",
+          "name": "ghc",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ghc"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Git",
+          "name": "git",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/git"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "GitHub Actions Runner Images",
+          "name": "github-actions-runner-images",
+          "tags": [
+            "github",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/github-actions-runner-images"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "GitLab Runner",
+          "name": "gitlab-runner",
+          "tags": [
+            "gitlab",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/gitlab-runner"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "GitLab",
+          "name": "gitlab",
+          "tags": [
+            "gitlab",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/gitlab"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Gleam",
+          "name": "gleam",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/gleam"
+        },
+        {
+          "aliases": [
+            "golang"
+          ],
+          "category": "lang",
+          "label": "Go",
+          "name": "go",
+          "tags": [
+            "google",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/go"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "GoAccess",
+          "name": "goaccess",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/goaccess"
+        },
+        {
+          "aliases": [
+            "godotengine"
+          ],
+          "category": "app",
+          "label": "Godot",
+          "name": "godot",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/godot"
+        },
+        {
+          "aliases": [
+            "gke"
+          ],
+          "category": "service",
+          "label": "Google Kubernetes Engine",
+          "name": "google-kubernetes-engine",
+          "tags": [
+            "google",
+            "managed-kubernetes",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/google-kubernetes-engine"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Google Nexus",
+          "name": "google-nexus",
+          "tags": [
+            "device",
+            "discontinued",
+            "google",
+            "mobile-phone",
+            "tablet"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/google-nexus"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Gorilla Toolkit",
+          "name": "gorilla",
+          "tags": [
+            "discontinued",
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/gorilla"
+        },
+        {
+          "aliases": [
+            "graalvm"
+          ],
+          "category": "lang",
+          "label": "GraalVM Community Edition",
+          "name": "graalvm-ce",
+          "tags": [
+            "java-distribution",
+            "lang",
+            "oracle"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/graalvm-ce"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Gradle",
+          "name": "gradle",
+          "tags": [
+            "app",
+            "build-tool",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/gradle"
+        },
+        {
+          "aliases": [
+            "loki"
+          ],
+          "category": "server-app",
+          "label": "Grafana Loki",
+          "name": "grafana-loki",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/grafana-loki"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Grafana",
+          "name": "grafana",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/grafana"
+        },
+        {
+          "aliases": [
+            "grails-framework",
+            "apache-grails"
+          ],
+          "category": "framework",
+          "label": "Apache Grails Framework",
+          "name": "grails",
+          "tags": [
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/grails"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Graylog",
+          "name": "graylog",
+          "tags": [
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/graylog"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Greenlight",
+          "name": "greenlight",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/greenlight"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "GrumPHP",
+          "name": "grumphp",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/grumphp"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Grunt",
+          "name": "grunt",
+          "tags": [
+            "app",
+            "herodevs",
+            "javascript-runtime",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/grunt"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "GStreamer",
+          "name": "gstreamer",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/gstreamer"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Guzzle",
+          "name": "guzzle",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/guzzle"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "HAProxy Ingress",
+          "name": "haproxy-ingress",
+          "tags": [
+            "kubernetes",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/haproxy-ingress"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "HAProxy",
+          "name": "haproxy",
+          "tags": [
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/haproxy"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Harbor",
+          "name": "harbor",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/harbor"
+        },
+        {
+          "aliases": [
+            "packer"
+          ],
+          "category": "server-app",
+          "label": "Hashicorp Packer",
+          "name": "hashicorp-packer",
+          "tags": [
+            "hashicorp",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/hashicorp-packer"
+        },
+        {
+          "aliases": [
+            "vault"
+          ],
+          "category": "server-app",
+          "label": "Hashicorp Vault",
+          "name": "hashicorp-vault",
+          "tags": [
+            "hashicorp",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/hashicorp-vault"
+        },
+        {
+          "aliases": [
+            "apache_hbase",
+            "apache-hbase"
+          ],
+          "category": "database",
+          "label": "Apache HBase",
+          "name": "hbase",
+          "tags": [
+            "apache",
+            "database",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/hbase"
+        },
+        {
+          "aliases": [],
+          "category": "service",
+          "label": "Heroku Postgres",
+          "name": "heroku-postgres",
+          "tags": [
+            "database",
+            "heroku",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/heroku-postgres"
+        },
+        {
+          "aliases": [
+            "hibernate"
+          ],
+          "category": "framework",
+          "label": "Hibernate ORM",
+          "name": "hibernate-orm",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/hibernate-orm"
+        },
+        {
+          "aliases": [
+            "aix"
+          ],
+          "category": "os",
+          "label": "IBM AIX",
+          "name": "ibm-aix",
+          "tags": [
+            "ibm",
+            "os",
+            "unix-distribution"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ibm-aix"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "IBM Db2",
+          "name": "ibm-db2",
+          "tags": [
+            "database",
+            "ibm"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ibm-db2"
+        },
+        {
+          "aliases": [
+            "iseries",
+            "i-series",
+            "ibm-iseries",
+            "ibmi",
+            "as400",
+            "os400",
+            "os-400"
+          ],
+          "category": "os",
+          "label": "IBM iSeries",
+          "name": "ibm-i",
+          "tags": [
+            "ibm",
+            "os",
+            "unix-distribution"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ibm-i"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "IBM MQ",
+          "name": "ibm-mq",
+          "tags": [
+            "ibm",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ibm-mq"
+        },
+        {
+          "aliases": [
+            "ibm-semeru",
+            "semeru"
+          ],
+          "category": "lang",
+          "label": "IBM Semeru Runtime",
+          "name": "ibm-semeru-runtime",
+          "tags": [
+            "ibm",
+            "java-distribution",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ibm-semeru-runtime"
+        },
+        {
+          "aliases": [
+            "icingaweb"
+          ],
+          "category": "server-app",
+          "label": "Icinga Web",
+          "name": "icinga-web",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/icinga-web"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Icinga",
+          "name": "icinga",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/icinga"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "IDL",
+          "name": "idl",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/idl"
+        },
+        {
+          "aliases": [
+            "influxdb-core"
+          ],
+          "category": "server-app",
+          "label": "InfluxDB",
+          "name": "influxdb",
+          "tags": [
+            "database",
+            "influxdata",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/influxdb"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Intel Processors",
+          "name": "intel-processors",
+          "tags": [
+            "device"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/intel-processors"
+        },
+        {
+          "aliases": [
+            "ie",
+            "msie",
+            "iexplore"
+          ],
+          "category": "app",
+          "label": "Internet Explorer",
+          "name": "internet-explorer",
+          "tags": [
+            "app",
+            "microsoft",
+            "web-browser"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/internet-explorer"
+        },
+        {
+          "aliases": [
+            "ionic-framework"
+          ],
+          "category": "framework",
+          "label": "Ionic Framework",
+          "name": "ionic",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ionic"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Apple iOS",
+          "name": "ios",
+          "tags": [
+            "apple",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ios"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Apple iPad",
+          "name": "ipad",
+          "tags": [
+            "apple",
+            "device",
+            "tablet"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ipad"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Apple iPadOS",
+          "name": "ipados",
+          "tags": [
+            "apple",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ipados"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Apple iPhone",
+          "name": "iphone",
+          "tags": [
+            "apple",
+            "device",
+            "mobile-phone"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/iphone"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "ISC DHCP",
+          "name": "isc-dhcp",
+          "tags": [
+            "discontinued",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/isc-dhcp"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Istio",
+          "name": "istio",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/istio"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Jaeger",
+          "name": "jaeger",
+          "tags": [
+            "app",
+            "cncf",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jaeger"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Jekyll",
+          "name": "jekyll",
+          "tags": [
+            "app",
+            "ruby-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jekyll"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Jenkins",
+          "name": "jenkins",
+          "tags": [
+            "java-runtime",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jenkins"
+        },
+        {
+          "aliases": [
+            "artifactory-xray",
+            "xray"
+          ],
+          "category": "server-app",
+          "label": "JFrog Xray",
+          "name": "jfrog-xray",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jfrog-xray"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "JHipster",
+          "name": "jhipster",
+          "tags": [
+            "app",
+            "java-runtime",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jhipster"
+        },
+        {
+          "aliases": [
+            "jira-service-desk",
+            "jsm"
+          ],
+          "category": "server-app",
+          "label": "Jira Service Management",
+          "name": "jira-service-management",
+          "tags": [
+            "atlassian",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jira-service-management"
+        },
+        {
+          "aliases": [
+            "jira",
+            "jira-core"
+          ],
+          "category": "server-app",
+          "label": "Jira Software",
+          "name": "jira-software",
+          "tags": [
+            "atlassian",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jira-software"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Joomla!",
+          "name": "joomla",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/joomla"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "jQuery UI",
+          "name": "jquery-ui",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jquery-ui"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "jQuery",
+          "name": "jquery",
+          "tags": [
+            "framework",
+            "javascript-runtime",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jquery"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "JReleaser",
+          "name": "jreleaser",
+          "tags": [
+            "app",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jreleaser"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "JRuby",
+          "name": "jruby",
+          "tags": [
+            "java-runtime",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/jruby"
+        },
+        {
+          "aliases": [
+            "julialang",
+            "julia-lang"
+          ],
+          "category": "lang",
+          "label": "Julia",
+          "name": "julia",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/julia"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Karpenter",
+          "name": "karpenter",
+          "tags": [
+            "cncf",
+            "kubernetes",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/karpenter"
+        },
+        {
+          "aliases": [
+            "kdeplasma"
+          ],
+          "category": "os",
+          "label": "KDE Plasma",
+          "name": "kde-plasma",
+          "tags": [
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kde-plasma"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "KEDA",
+          "name": "keda",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/keda"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Keycloak",
+          "name": "keycloak",
+          "tags": [
+            "java-runtime",
+            "linux-foundation",
+            "red-hat",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/keycloak"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Kiali",
+          "name": "kiali",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kiali"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Kibana",
+          "name": "kibana",
+          "tags": [
+            "elastic",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kibana"
+        },
+        {
+          "aliases": [
+            "amazon-kindle"
+          ],
+          "category": "device",
+          "label": "Amazon Kindle",
+          "name": "kindle",
+          "tags": [
+            "amazon",
+            "device",
+            "e-reader"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kindle"
+        },
+        {
+          "aliases": [
+            "getkirby"
+          ],
+          "category": "server-app",
+          "label": "Kirby",
+          "name": "kirby",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kirby"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Knative",
+          "name": "knative",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/knative"
+        },
+        {
+          "aliases": [
+            "kong",
+            "kong-api-gateway"
+          ],
+          "category": "server-app",
+          "label": "Kong Gateway",
+          "name": "kong-gateway",
+          "tags": [
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kong-gateway"
+        },
+        {
+          "aliases": [
+            "kotlinlang"
+          ],
+          "category": "lang",
+          "label": "Kotlin",
+          "name": "kotlin",
+          "tags": [
+            "jetbrains",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kotlin"
+        },
+        {
+          "aliases": [
+            "k8s-csi-node-driver-registrar",
+            "node-driver-registrar"
+          ],
+          "category": "server-app",
+          "label": "Kubernetes CSI Node Driver Registrar",
+          "name": "kubernetes-csi-node-driver-registrar",
+          "tags": [
+            "kubernetes",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kubernetes-csi-node-driver-registrar"
+        },
+        {
+          "aliases": [
+            "k8s-node-feature-discovery",
+            "node-feature-discovery"
+          ],
+          "category": "server-app",
+          "label": "Kubernetes Node Feature Discovery",
+          "name": "kubernetes-node-feature-discovery",
+          "tags": [
+            "kubernetes",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kubernetes-node-feature-discovery"
+        },
+        {
+          "aliases": [
+            "k8s"
+          ],
+          "category": "server-app",
+          "label": "Kubernetes",
+          "name": "kubernetes",
+          "tags": [
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kubernetes"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Kuma",
+          "name": "kuma",
+          "tags": [
+            "cncf",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kuma"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Kyverno",
+          "name": "kyverno",
+          "tags": [
+            "cncf",
+            "kubernetes",
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/kyverno"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Laravel",
+          "name": "laravel",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/laravel"
+        },
+        {
+          "aliases": [
+            "lam",
+            "ldapaccountmanager"
+          ],
+          "category": "server-app",
+          "label": "LDAP Account Manager",
+          "name": "ldap-account-manager",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ldap-account-manager"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "LibreOffice",
+          "name": "libreoffice",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/libreoffice"
+        },
+        {
+          "aliases": [
+            "lineage"
+          ],
+          "category": "os",
+          "label": "LineageOS",
+          "name": "lineageos",
+          "tags": [
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/lineageos"
+        },
+        {
+          "aliases": [
+            "linuxkernel",
+            "linux-kernel"
+          ],
+          "category": "os",
+          "label": "Linux Kernel",
+          "name": "linux",
+          "tags": [
+            "linux-foundation",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/linux"
+        },
+        {
+          "aliases": [
+            "linux-mint"
+          ],
+          "category": "os",
+          "label": "Linux Mint",
+          "name": "linuxmint",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/linuxmint"
+        },
+        {
+          "aliases": [
+            "liquibase-pro"
+          ],
+          "category": "framework",
+          "label": "Liquibase Secure",
+          "name": "liquibase-secure",
+          "tags": [
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/liquibase-secure"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Liquibase",
+          "name": "liquibase",
+          "tags": [
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/liquibase"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Livewire",
+          "name": "livewire",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/livewire"
+        },
+        {
+          "aliases": [
+            "apache_log4j",
+            "apache-log4j"
+          ],
+          "category": "framework",
+          "label": "Apache Log4j",
+          "name": "log4j",
+          "tags": [
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/log4j"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Logstash",
+          "name": "logstash",
+          "tags": [
+            "elastic",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/logstash"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Longhorn",
+          "name": "longhorn",
+          "tags": [
+            "cncf",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/longhorn"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Looker",
+          "name": "looker",
+          "tags": [
+            "google",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/looker"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Lua",
+          "name": "lua",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/lua"
+        },
+        {
+          "aliases": [
+            "mac"
+          ],
+          "category": "os",
+          "label": "Apple macOS",
+          "name": "macos",
+          "tags": [
+            "apple",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/macos"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Mageia",
+          "name": "mageia",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mageia"
+        },
+        {
+          "aliases": [
+            "adobe-commerce"
+          ],
+          "category": "server-app",
+          "label": "Magento",
+          "name": "magento",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/magento"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Mandrel",
+          "name": "mandrel",
+          "tags": [
+            "java-distribution",
+            "lang",
+            "openjdk"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mandrel"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "MariaDB",
+          "name": "mariadb",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mariadb"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Mastodon",
+          "name": "mastodon",
+          "tags": [
+            "javascript-runtime",
+            "ruby-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mastodon"
+        },
+        {
+          "aliases": [
+            "piwik"
+          ],
+          "category": "server-app",
+          "label": "Matomo",
+          "name": "matomo",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/matomo"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Mattermost",
+          "name": "mattermost",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mattermost"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Mautic",
+          "name": "mautic",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mautic"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "MediaWiki",
+          "name": "mediawiki",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mediawiki"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Meilisearch",
+          "name": "meilisearch",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/meilisearch"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "Memcached",
+          "name": "memcached",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/memcached"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Metabase",
+          "name": "metabase",
+          "tags": [
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/metabase"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "MetalLB",
+          "name": "metallb",
+          "tags": [
+            "cncf",
+            "kubernetes",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/metallb"
+        },
+        {
+          "aliases": [
+            "micronaut-framework",
+            "mn"
+          ],
+          "category": "framework",
+          "label": "Micronaut Framework",
+          "name": "micronaut",
+          "tags": [
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/micronaut"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Microsoft Build of OpenJDK",
+          "name": "microsoft-build-of-openjdk",
+          "tags": [
+            "java-distribution",
+            "lang",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/microsoft-build-of-openjdk"
+        },
+        {
+          "aliases": [
+            "mongo"
+          ],
+          "category": "database",
+          "label": "MongoDB Server",
+          "name": "mongodb",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mongodb"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Moodle",
+          "name": "moodle",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/moodle"
+        },
+        {
+          "aliases": [
+            "motorola",
+            "motorolamobility"
+          ],
+          "category": "device",
+          "label": "Motorola Mobility",
+          "name": "motorola-mobility",
+          "tags": [
+            "device",
+            "mobile-phone",
+            "motorola"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/motorola-mobility"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Microsoft Exchange",
+          "name": "msexchange",
+          "tags": [
+            "microsoft",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/msexchange"
+        },
+        {
+          "aliases": [
+            "mssql",
+            "microsoftsqlserver"
+          ],
+          "category": "database",
+          "label": "Microsoft SQL Server",
+          "name": "mssqlserver",
+          "tags": [
+            "database",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mssqlserver"
+        },
+        {
+          "aliases": [
+            "mule-runtime",
+            "mulesoft-runtimes",
+            "mule-runtimes"
+          ],
+          "category": "server-app",
+          "label": "Mule Runtime",
+          "name": "mulesoft-runtime",
+          "tags": [
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mulesoft-runtime"
+        },
+        {
+          "aliases": [
+            "mx_linux",
+            "mx-linux",
+            "mx"
+          ],
+          "category": "os",
+          "label": "MX Linux",
+          "name": "mxlinux",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mxlinux"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "MySQL",
+          "name": "mysql",
+          "tags": [
+            "database",
+            "oracle"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/mysql"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "Neo4j",
+          "name": "neo4j",
+          "tags": [
+            "database",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/neo4j"
+        },
+        {
+          "aliases": [
+            "neoscms"
+          ],
+          "category": "server-app",
+          "label": "Neos",
+          "name": "neos",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/neos"
+        },
+        {
+          "aliases": [
+            "nest"
+          ],
+          "category": "framework",
+          "label": "NestJS",
+          "name": "nestjs",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nestjs"
+        },
+        {
+          "aliases": [
+            "ontap",
+            "ontap-os"
+          ],
+          "category": "os",
+          "label": "NetApp ONTAP",
+          "name": "netapp-ontap",
+          "tags": [
+            "netapp",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/netapp-ontap"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "NetBackup Appliance OS",
+          "name": "netbackup-appliance-os",
+          "tags": [
+            "os",
+            "veritas"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/netbackup-appliance-os"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "NetBSD",
+          "name": "netbsd",
+          "tags": [
+            "bsd-distribution",
+            "os",
+            "unix-distribution"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/netbsd"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Nextcloud",
+          "name": "nextcloud",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nextcloud"
+        },
+        {
+          "aliases": [
+            "next-js",
+            "nextdotjs"
+          ],
+          "category": "framework",
+          "label": "Next.js",
+          "name": "nextjs",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nextjs"
+        },
+        {
+          "aliases": [
+            "nexus-repository",
+            "nexus-repository-oss",
+            "nexus-repository-pro"
+          ],
+          "category": "server-app",
+          "label": "Nexus Repository",
+          "name": "nexus",
+          "tags": [
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nexus"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "nginx",
+          "name": "nginx",
+          "tags": [
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nginx"
+        },
+        {
+          "aliases": [
+            "nixlang"
+          ],
+          "category": "app",
+          "label": "nix",
+          "name": "nix",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nix"
+        },
+        {
+          "aliases": [
+            "nixoslinux"
+          ],
+          "category": "os",
+          "label": "NixOS",
+          "name": "nixos",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nixos"
+        },
+        {
+          "aliases": [
+            "node"
+          ],
+          "category": "framework",
+          "label": "Node.js",
+          "name": "nodejs",
+          "tags": [
+            "framework",
+            "herodevs",
+            "javascript-runtime",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nodejs"
+        },
+        {
+          "aliases": [
+            "hmd",
+            "nokiamobile"
+          ],
+          "category": "device",
+          "label": "Nokia Mobile",
+          "name": "nokia",
+          "tags": [
+            "device",
+            "mobile-phone"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nokia"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Nomad",
+          "name": "nomad",
+          "tags": [
+            "hashicorp",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nomad"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Notepad++",
+          "name": "notepad-plus-plus",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/notepad-plus-plus"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "NumPy",
+          "name": "numpy",
+          "tags": [
+            "framework",
+            "python-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/numpy"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Nura",
+          "name": "nura",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nura"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Nutanix AOS",
+          "name": "nutanix-aos",
+          "tags": [
+            "nutanix",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nutanix-aos"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Nutanix Files",
+          "name": "nutanix-files",
+          "tags": [
+            "nutanix",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nutanix-files"
+        },
+        {
+          "aliases": [
+            "nutanixprismcentral",
+            "prism",
+            "prismcentral"
+          ],
+          "category": "server-app",
+          "label": "Nutanix Prism Central",
+          "name": "nutanix-prism",
+          "tags": [
+            "nutanix",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nutanix-prism"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Nuxt",
+          "name": "nuxt",
+          "tags": [
+            "framework",
+            "herodevs",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nuxt"
+        },
+        {
+          "aliases": [
+            "nvidia-driver"
+          ],
+          "category": "app",
+          "label": "NVIDIA Driver",
+          "name": "nvidia",
+          "tags": [
+            "app",
+            "nvidia"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nvidia"
+        },
+        {
+          "aliases": [
+            "nvidia-products",
+            "nvidia-gpus"
+          ],
+          "category": "device",
+          "label": "NVIDIA GPUs",
+          "name": "nvidia-gpu",
+          "tags": [
+            "device",
+            "nvidia"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nvidia-gpu"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "nvm",
+          "name": "nvm",
+          "tags": [
+            "app",
+            "herodevs",
+            "javascript-runtime",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/nvm"
+        },
+        {
+          "aliases": [
+            "msoffice"
+          ],
+          "category": "app",
+          "label": "Microsoft Office",
+          "name": "office",
+          "tags": [
+            "app",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/office"
+        },
+        {
+          "aliases": [
+            "vmwarehorizon",
+            "vmware-horizon",
+            "omnissahorizon",
+            "omnissa-horizon"
+          ],
+          "category": "app",
+          "label": "Omnissa Horizon",
+          "name": "horizon",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/horizon"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "OnePlus",
+          "name": "oneplus",
+          "tags": [
+            "device",
+            "mobile-phone"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/oneplus"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Oniguruma",
+          "name": "oniguruma",
+          "tags": [
+            "discontinued",
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/oniguruma"
+        },
+        {
+          "aliases": [
+            "openai"
+          ],
+          "category": "service",
+          "label": "OpenAI API Models",
+          "name": "openai-api-models",
+          "tags": [
+            "llm",
+            "service"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/openai-api-models"
+        },
+        {
+          "aliases": [
+            "open-bao",
+            "bao"
+          ],
+          "category": "server-app",
+          "label": "OpenBao",
+          "name": "openbao",
+          "tags": [
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/openbao"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "OpenBSD",
+          "name": "openbsd",
+          "tags": [
+            "bsd-distribution",
+            "os",
+            "unix-distribution"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/openbsd"
+        },
+        {
+          "aliases": [
+            "oracle-openjdk"
+          ],
+          "category": "lang",
+          "label": "OpenJDK builds from Oracle",
+          "name": "openjdk-builds-from-oracle",
+          "tags": [
+            "java-distribution",
+            "lang",
+            "oracle"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/openjdk-builds-from-oracle"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "OpenSearch",
+          "name": "opensearch",
+          "tags": [
+            "amazon",
+            "database",
+            "java-runtime",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/opensearch"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "OpenSSL",
+          "name": "openssl",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/openssl"
+        },
+        {
+          "aliases": [
+            "opensuseleap"
+          ],
+          "category": "os",
+          "label": "openSUSE",
+          "name": "opensuse",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/opensuse"
+        },
+        {
+          "aliases": [
+            "tofu",
+            "open-tofu"
+          ],
+          "category": "app",
+          "label": "OpenTofu",
+          "name": "opentofu",
+          "tags": [
+            "app",
+            "cncf",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/opentofu"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "OpenVPN",
+          "name": "openvpn",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/openvpn"
+        },
+        {
+          "aliases": [
+            "open-wrt"
+          ],
+          "category": "os",
+          "label": "OpenWrt",
+          "name": "openwrt",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/openwrt"
+        },
+        {
+          "aliases": [
+            "zfs"
+          ],
+          "category": "app",
+          "label": "OpenZFS",
+          "name": "openzfs",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/openzfs"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "OPNsense",
+          "name": "opnsense",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/opnsense"
+        },
+        {
+          "aliases": [
+            "orclapex"
+          ],
+          "category": "framework",
+          "label": "Oracle APEX",
+          "name": "oracle-apex",
+          "tags": [
+            "framework",
+            "oracle"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/oracle-apex"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "Oracle Database",
+          "name": "oracle-database",
+          "tags": [
+            "database",
+            "oracle"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/oracle-database"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Oracle GraalVM",
+          "name": "oracle-graalvm",
+          "tags": [
+            "java-distribution",
+            "lang",
+            "oracle"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/oracle-graalvm"
+        },
+        {
+          "aliases": [
+            "oracle-java"
+          ],
+          "category": "lang",
+          "label": "Oracle JDK",
+          "name": "oracle-jdk",
+          "tags": [
+            "java-distribution",
+            "lang",
+            "oracle"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/oracle-jdk"
+        },
+        {
+          "aliases": [
+            "oraclelinux"
+          ],
+          "category": "os",
+          "label": "Oracle Linux",
+          "name": "oracle-linux",
+          "tags": [
+            "linux-distribution",
+            "oracle",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/oracle-linux"
+        },
+        {
+          "aliases": [
+            "solaris"
+          ],
+          "category": "os",
+          "label": "Oracle Solaris",
+          "name": "oracle-solaris",
+          "tags": [
+            "oracle",
+            "os",
+            "unix-distribution"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/oracle-solaris"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "OTOBO",
+          "name": "otobo",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/otobo"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "oVirt",
+          "name": "ovirt",
+          "tags": [
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ovirt"
+        },
+        {
+          "aliases": [
+            "pan-xdr",
+            "cortexxdr",
+            "xdr",
+            "pan-cortex-xdr"
+          ],
+          "category": "app",
+          "label": "Palo Alto Networks Cortex XDR agent",
+          "name": "cortex-xdr",
+          "tags": [
+            "app",
+            "palo-alto-networks"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/cortex-xdr"
+        },
+        {
+          "aliases": [
+            "pan-gp"
+          ],
+          "category": "app",
+          "label": "Palo Alto Networks GlobalProtect App",
+          "name": "pangp",
+          "tags": [
+            "app",
+            "palo-alto-networks"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/pangp"
+        },
+        {
+          "aliases": [
+            "pan-os"
+          ],
+          "category": "os",
+          "label": "Palo Alto Networks PAN-OS",
+          "name": "panos",
+          "tags": [
+            "os",
+            "palo-alto-networks"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/panos"
+        },
+        {
+          "aliases": [
+            "pci"
+          ],
+          "category": "standard",
+          "label": "PCI-DSS",
+          "name": "pci-dss",
+          "tags": [
+            "standard"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/pci-dss"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Perl",
+          "name": "perl",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/perl"
+        },
+        {
+          "aliases": [
+            "pgadmin4"
+          ],
+          "category": "server-app",
+          "label": "pgAdmin",
+          "name": "pgadmin",
+          "tags": [
+            "python-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/pgadmin"
+        },
+        {
+          "aliases": [
+            "phoenix",
+            "phoenixframework"
+          ],
+          "category": "framework",
+          "label": "Phoenix Framework",
+          "name": "phoenix-framework",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/phoenix-framework"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "PHP",
+          "name": "php",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/php"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "phpBB",
+          "name": "phpbb",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/phpbb"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "phpMyAdmin",
+          "name": "phpmyadmin",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/phpmyadmin"
+        },
+        {
+          "aliases": [
+            "dovecot-pigeonhole"
+          ],
+          "category": "server-app",
+          "label": "Pigeonhole",
+          "name": "pigeonhole",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/pigeonhole"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Google Pixel Watch",
+          "name": "pixel-watch",
+          "tags": [
+            "device",
+            "google",
+            "watch"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/pixel-watch"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Google Pixel",
+          "name": "pixel",
+          "tags": [
+            "device",
+            "google",
+            "mobile-phone"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/pixel"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Plesk",
+          "name": "plesk",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/plesk"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Plone",
+          "name": "plone",
+          "tags": [
+            "python-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/plone"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "pnpm",
+          "name": "pnpm",
+          "tags": [
+            "app",
+            "build-tool",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/pnpm"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Podman",
+          "name": "podman",
+          "tags": [
+            "app",
+            "cncf",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/podman"
+        },
+        {
+          "aliases": [
+            "popos",
+            "pop_os"
+          ],
+          "category": "os",
+          "label": "Pop!_OS",
+          "name": "pop-os",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/pop-os"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Postfix",
+          "name": "postfix",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/postfix"
+        },
+        {
+          "aliases": [
+            "postgres",
+            "pg",
+            "psql",
+            "pgsql"
+          ],
+          "category": "database",
+          "label": "PostgreSQL",
+          "name": "postgresql",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/postgresql"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "postmarketOS",
+          "name": "postmarketos",
+          "tags": [
+            "discontinued",
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/postmarketos"
+        },
+        {
+          "aliases": [
+            "pwsh",
+            "ps",
+            "ps1"
+          ],
+          "category": "lang",
+          "label": "Microsoft PowerShell",
+          "name": "powershell",
+          "tags": [
+            "lang",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/powershell"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "PrivateBin",
+          "name": "privatebin",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/privatebin"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "ProFTPD",
+          "name": "proftpd",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/proftpd"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Prometheus",
+          "name": "prometheus",
+          "tags": [
+            "linux-foundation",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/prometheus"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Protractor",
+          "name": "protractor",
+          "tags": [
+            "framework",
+            "google",
+            "herodevs",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/protractor"
+        },
+        {
+          "aliases": [
+            "pbs"
+          ],
+          "category": "server-app",
+          "label": "Proxmox Backup Server",
+          "name": "proxmox-backup-server",
+          "tags": [
+            "proxmox",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/proxmox-backup-server"
+        },
+        {
+          "aliases": [
+            "pdm"
+          ],
+          "category": "server-app",
+          "label": "Proxmox Datacenter Manager",
+          "name": "proxmox-datacenter-manager",
+          "tags": [
+            "proxmox",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/proxmox-datacenter-manager"
+        },
+        {
+          "aliases": [
+            "pmg"
+          ],
+          "category": "server-app",
+          "label": "Proxmox Mail Gateway",
+          "name": "proxmox-mail-gateway",
+          "tags": [
+            "proxmox",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/proxmox-mail-gateway"
+        },
+        {
+          "aliases": [
+            "pve",
+            "proxmoxve"
+          ],
+          "category": "os",
+          "label": "Proxmox VE",
+          "name": "proxmox-ve",
+          "tags": [
+            "os",
+            "proxmox"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/proxmox-ve"
+        },
+        {
+          "aliases": [
+            "puppet-osp",
+            "puppet-agent"
+          ],
+          "category": "server-app",
+          "label": "Puppet",
+          "name": "puppet",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/puppet"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Python",
+          "name": "python",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/python"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Qt",
+          "name": "qt",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/qt"
+        },
+        {
+          "aliases": [
+            "quarkus"
+          ],
+          "category": "framework",
+          "label": "Quarkus",
+          "name": "quarkus-framework",
+          "tags": [
+            "framework",
+            "java-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/quarkus-framework"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Quasar",
+          "name": "quasar",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/quasar"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "RabbitMQ",
+          "name": "rabbitmq",
+          "tags": [
+            "erlang-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/rabbitmq"
+        },
+        {
+          "aliases": [
+            "suse-rancher"
+          ],
+          "category": "server-app",
+          "label": "Rancher",
+          "name": "rancher",
+          "tags": [
+            "server-app",
+            "suse"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/rancher"
+        },
+        {
+          "aliases": [
+            "raspberrypi",
+            "raspi",
+            "rpi"
+          ],
+          "category": "device",
+          "label": "Raspberry Pi",
+          "name": "raspberry-pi",
+          "tags": [
+            "device"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/raspberry-pi"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "React Native",
+          "name": "react-native",
+          "tags": [
+            "framework",
+            "javascript-runtime",
+            "meta"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/react-native"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "React",
+          "name": "react",
+          "tags": [
+            "framework",
+            "javascript-runtime",
+            "meta"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/react"
+        },
+        {
+          "aliases": [
+            "ansible-automation-platform",
+            "aap"
+          ],
+          "category": "server-app",
+          "label": "Red Hat Ansible Automation Platform",
+          "name": "red-hat-ansible-automation-platform",
+          "tags": [
+            "red-hat",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/red-hat-ansible-automation-platform"
+        },
+        {
+          "aliases": [
+            "redhat-openjdk",
+            "redhat-jdk",
+            "red-hat-openjdk",
+            "rh-openjdk",
+            "rhjdk",
+            "red-hat-build-of-openjdk"
+          ],
+          "category": "lang",
+          "label": "Red Hat build of OpenJDK",
+          "name": "redhat-build-of-openjdk",
+          "tags": [
+            "java-distribution",
+            "lang",
+            "red-hat"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/redhat-build-of-openjdk"
+        },
+        {
+          "aliases": [
+            "jboss-eap",
+            "jboss",
+            "red-hat-jboss-eap"
+          ],
+          "category": "server-app",
+          "label": "Red Hat JBoss Enterprise Application Platform",
+          "name": "redhat-jboss-eap",
+          "tags": [
+            "java-runtime",
+            "red-hat",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/redhat-jboss-eap"
+        },
+        {
+          "aliases": [
+            "openshift",
+            "rh-openshift"
+          ],
+          "category": "server-app",
+          "label": "Red Hat OpenShift",
+          "name": "red-hat-openshift",
+          "tags": [
+            "red-hat",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/red-hat-openshift"
+        },
+        {
+          "aliases": [
+            "rhsat",
+            "red-hat-satellite"
+          ],
+          "category": "server-app",
+          "label": "Red Hat Satellite",
+          "name": "redhat-satellite",
+          "tags": [
+            "red-hat",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/redhat-satellite"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "Redis",
+          "name": "redis",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/redis"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Redmine",
+          "name": "redmine",
+          "tags": [
+            "ruby-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/redmine"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Renovate CLI",
+          "name": "renovate",
+          "tags": [
+            "app",
+            "package-manager"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/renovate"
+        },
+        {
+          "aliases": [
+            "redhat",
+            "redhatlinux"
+          ],
+          "category": "os",
+          "label": "Red Hat Enterprise Linux",
+          "name": "rhel",
+          "tags": [
+            "linux-distribution",
+            "os",
+            "red-hat"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/rhel"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Robo",
+          "name": "robo",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/robo"
+        },
+        {
+          "aliases": [
+            "rocketchat"
+          ],
+          "category": "server-app",
+          "label": "Rocket.Chat",
+          "name": "rocket-chat",
+          "tags": [
+            "javascript-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/rocket-chat"
+        },
+        {
+          "aliases": [
+            "rocky",
+            "rockylinux"
+          ],
+          "category": "os",
+          "label": "Rocky Linux",
+          "name": "rocky-linux",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/rocky-linux"
+        },
+        {
+          "aliases": [
+            "ros2"
+          ],
+          "category": "framework",
+          "label": "ROS 2",
+          "name": "ros-2",
+          "tags": [
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ros-2"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "ROS",
+          "name": "ros",
+          "tags": [
+            "discontinued",
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ros"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Roundcube Webmail",
+          "name": "roundcube",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/roundcube"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "RouterOS",
+          "name": "routeros",
+          "tags": [
+            "mikrotik",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/routeros"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "rtpengine",
+          "name": "rtpengine",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/rtpengine"
+        },
+        {
+          "aliases": [
+            "rubyonrails",
+            "ruby-on-rails",
+            "roro",
+            "ror"
+          ],
+          "category": "framework",
+          "label": "Ruby on Rails",
+          "name": "rails",
+          "tags": [
+            "framework",
+            "ruby-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/rails"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Ruby",
+          "name": "ruby",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ruby"
+        },
+        {
+          "aliases": [
+            "rustlang",
+            "rust-lang"
+          ],
+          "category": "lang",
+          "label": "Rust",
+          "name": "rust",
+          "tags": [
+            "lang",
+            "rust-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/rust"
+        },
+        {
+          "aliases": [
+            "saltstack"
+          ],
+          "category": "server-app",
+          "label": "Salt",
+          "name": "salt",
+          "tags": [
+            "python-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/salt"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Samba",
+          "name": "samba",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/samba"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Samsung Galaxy Tab",
+          "name": "samsung-galaxy-tab",
+          "tags": [
+            "device",
+            "tablet"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/samsung-galaxy-tab"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Samsung Galaxy Watch",
+          "name": "samsung-galaxy-watch",
+          "tags": [
+            "device",
+            "watch"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/samsung-galaxy-watch"
+        },
+        {
+          "aliases": [
+            "samsungmobile"
+          ],
+          "category": "device",
+          "label": "Samsung Mobile",
+          "name": "samsung-mobile",
+          "tags": [
+            "device",
+            "mobile-phone"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/samsung-mobile"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "SapMachine",
+          "name": "sapmachine",
+          "tags": [
+            "java-distribution",
+            "lang",
+            "sap"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sapmachine"
+        },
+        {
+          "aliases": [
+            "scala-lang"
+          ],
+          "category": "lang",
+          "label": "Scala",
+          "name": "scala",
+          "tags": [
+            "java-runtime",
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/scala"
+        },
+        {
+          "aliases": [
+            "mssharepoint"
+          ],
+          "category": "server-app",
+          "label": "Microsoft SharePoint",
+          "name": "sharepoint",
+          "tags": [
+            "microsoft",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sharepoint"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Shopware",
+          "name": "shopware",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/shopware"
+        },
+        {
+          "aliases": [
+            "silverstripe-cms",
+            "silverstripe-framework"
+          ],
+          "category": "server-app",
+          "label": "Silverstripe CMS",
+          "name": "silverstripe",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/silverstripe"
+        },
+        {
+          "aliases": [
+            "slackwarelinux",
+            "slackware-linux"
+          ],
+          "category": "os",
+          "label": "Slackware Linux",
+          "name": "slackware",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/slackware"
+        },
+        {
+          "aliases": [
+            "suseenterpriseserver",
+            "suseserver",
+            "suselinuxenterpriseserver"
+          ],
+          "category": "os",
+          "label": "SUSE Linux Enterprise Server",
+          "name": "sles",
+          "tags": [
+            "linux-distribution",
+            "os",
+            "suse"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sles"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Stormshield Firmware",
+          "name": "sns-firmware",
+          "tags": [
+            "os",
+            "stormshield"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sns-firmware"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Stormshield Firewall",
+          "name": "sns-hardware",
+          "tags": [
+            "device",
+            "stormshield"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sns-hardware"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Stormshield Management Center",
+          "name": "sns-smc",
+          "tags": [
+            "os",
+            "stormshield"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sns-smc"
+        },
+        {
+          "aliases": [
+            "apache_solr",
+            "apache-solr"
+          ],
+          "category": "server-app",
+          "label": "Apache Solr",
+          "name": "solr",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/solr"
+        },
+        {
+          "aliases": [
+            "sonar",
+            "sonarqube"
+          ],
+          "category": "server-app",
+          "label": "SonarQube Community Build",
+          "name": "sonarqube-community",
+          "tags": [
+            "java-runtime",
+            "server-app",
+            "sonarsource"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sonarqube-community"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "SonarQube Server",
+          "name": "sonarqube-server",
+          "tags": [
+            "java-runtime",
+            "server-app",
+            "sonarsource"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sonarqube-server"
+        },
+        {
+          "aliases": [
+            "xperia"
+          ],
+          "category": "device",
+          "label": "Sony Xperia",
+          "name": "sony-xperia",
+          "tags": [
+            "device",
+            "sony"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sony-xperia"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Sourcegraph",
+          "name": "sourcegraph",
+          "tags": [
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sourcegraph"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Splunk",
+          "name": "splunk",
+          "tags": [
+            "cisco",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/splunk"
+        },
+        {
+          "aliases": [
+            "springboot"
+          ],
+          "category": "framework",
+          "label": "Spring Boot",
+          "name": "spring-boot",
+          "tags": [
+            "framework",
+            "java-runtime",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/spring-boot"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Spring Cloud",
+          "name": "spring-cloud",
+          "tags": [
+            "framework",
+            "java-runtime",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/spring-cloud"
+        },
+        {
+          "aliases": [
+            "spring"
+          ],
+          "category": "framework",
+          "label": "Spring Framework",
+          "name": "spring-framework",
+          "tags": [
+            "framework",
+            "java-runtime",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/spring-framework"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Spring Security",
+          "name": "spring-security",
+          "tags": [
+            "framework",
+            "java-runtime",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/spring-security"
+        },
+        {
+          "aliases": [
+            "sqlite3"
+          ],
+          "category": "database",
+          "label": "SQLite",
+          "name": "sqlite",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sqlite"
+        },
+        {
+          "aliases": [
+            "squid-cache"
+          ],
+          "category": "server-app",
+          "label": "Squid",
+          "name": "squid",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/squid"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Statamic",
+          "name": "statamic",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/statamic"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "SteamOS",
+          "name": "steamos",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/steamos"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Strapi",
+          "name": "strapi",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/strapi"
+        },
+        {
+          "aliases": [],
+          "category": "device",
+          "label": "Microsoft Surface",
+          "name": "surface",
+          "tags": [
+            "device",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/surface"
+        },
+        {
+          "aliases": [
+            "sl-micro"
+          ],
+          "category": "os",
+          "label": "SUSE Linux Micro",
+          "name": "suse-linux-micro",
+          "tags": [
+            "linux-distribution",
+            "os",
+            "suse"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/suse-linux-micro"
+        },
+        {
+          "aliases": [
+            "suse-multi-linux-manager",
+            "suse-mlm"
+          ],
+          "category": "server-app",
+          "label": "SUSE Multi-Linux Manager",
+          "name": "suse-manager",
+          "tags": [
+            "server-app",
+            "suse"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/suse-manager"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Svelte",
+          "name": "svelte",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/svelte"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Sylius",
+          "name": "sylius",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/sylius"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Symfony",
+          "name": "symfony",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/symfony"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Tails",
+          "name": "tails",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/tails"
+        },
+        {
+          "aliases": [
+            "tailwind",
+            "tailwindcss"
+          ],
+          "category": "framework",
+          "label": "Tailwind CSS",
+          "name": "tailwind-css",
+          "tags": [
+            "css-runtime",
+            "framework"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/tailwind-css"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "Tarantool",
+          "name": "tarantool",
+          "tags": [
+            "database"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/tarantool"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "tarteaucitron",
+          "name": "tarteaucitron",
+          "tags": [
+            "framework",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/tarteaucitron"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Telegraf",
+          "name": "telegraf",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/telegraf"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Teleport",
+          "name": "teleport",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/teleport"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Hashicorp Terraform",
+          "name": "terraform",
+          "tags": [
+            "app",
+            "hashicorp"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/terraform"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Thumbor",
+          "name": "thumbor",
+          "tags": [
+            "python-runtime",
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/thumbor"
+        },
+        {
+          "aliases": [],
+          "category": "standard",
+          "label": "TLS",
+          "name": "tls",
+          "tags": [
+            "ietf",
+            "standard"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/tls"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Apache Tomcat",
+          "name": "tomcat",
+          "tags": [
+            "apache",
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/tomcat"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Traefik",
+          "name": "traefik",
+          "tags": [
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/traefik"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "TrueNAS",
+          "name": "truenas",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/truenas"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Twig",
+          "name": "twig",
+          "tags": [
+            "framework",
+            "php-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/twig"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "TYPO3",
+          "name": "typo3",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/typo3"
+        },
+        {
+          "aliases": [
+            "ubuntu-linux"
+          ],
+          "category": "os",
+          "label": "Ubuntu",
+          "name": "ubuntu",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/ubuntu"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Umbraco CMS",
+          "name": "umbraco",
+          "tags": [
+            "dotnet-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/umbraco"
+        },
+        {
+          "aliases": [
+            "unity3d"
+          ],
+          "category": "app",
+          "label": "Unity",
+          "name": "unity",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/unity"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "UnrealIRCd",
+          "name": "unrealircd",
+          "tags": [
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/unrealircd"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "Valkey",
+          "name": "valkey",
+          "tags": [
+            "database",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/valkey"
+        },
+        {
+          "aliases": [
+            "varnish-cache"
+          ],
+          "category": "server-app",
+          "label": "Varnish",
+          "name": "varnish",
+          "tags": [
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/varnish"
+        },
+        {
+          "aliases": [
+            "veeam-backup"
+          ],
+          "category": "app",
+          "label": "Veeam Backup & Replication",
+          "name": "veeam-backup-and-replication",
+          "tags": [
+            "app",
+            "veeam"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/veeam-backup-and-replication"
+        },
+        {
+          "aliases": [
+            "veeam-backup-365"
+          ],
+          "category": "app",
+          "label": "Veeam Backup for Microsoft 365",
+          "name": "veeam-backup-for-microsoft-365",
+          "tags": [
+            "app",
+            "veeam"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/veeam-backup-for-microsoft-365"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Veeam ONE",
+          "name": "veeam-one",
+          "tags": [
+            "app",
+            "veeam"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/veeam-one"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Vinyl Cache",
+          "name": "vinyl-cache",
+          "tags": [
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/vinyl-cache"
+        },
+        {
+          "aliases": [
+            "vbox",
+            "oracle-virtualbox",
+            "oracle-vm-virtualbox"
+          ],
+          "category": "app",
+          "label": "VirtualBox",
+          "name": "virtualbox",
+          "tags": [
+            "app",
+            "oracle"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/virtualbox"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Apple visionOS",
+          "name": "visionos",
+          "tags": [
+            "apple",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/visionos"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Visual COBOL",
+          "name": "visual-cobol",
+          "tags": [
+            "lang"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/visual-cobol"
+        },
+        {
+          "aliases": [
+            "visualstudio"
+          ],
+          "category": "app",
+          "label": "Microsoft Visual Studio",
+          "name": "visual-studio",
+          "tags": [
+            "app",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/visual-studio"
+        },
+        {
+          "aliases": [],
+          "category": "database",
+          "label": "Vitess",
+          "name": "vitess",
+          "tags": [
+            "database",
+            "linux-foundation"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/vitess"
+        },
+        {
+          "aliases": [
+            "vcf",
+            "vmwarecloudfoundation",
+            "cloudfoundation",
+            "cloud-foundation",
+            "vmware-cloudfoundation"
+          ],
+          "category": "server-app",
+          "label": "VMware Cloud Foundation",
+          "name": "vmware-cloud-foundation",
+          "tags": [
+            "server-app",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/vmware-cloud-foundation"
+        },
+        {
+          "aliases": [
+            "esx",
+            "vmwareesxi",
+            "vmesxi",
+            "vmware-esxi"
+          ],
+          "category": "os",
+          "label": "VMware ESXi",
+          "name": "esxi",
+          "tags": [
+            "os",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/esxi"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "VMware Harbor Registry",
+          "name": "vmware-harbor-registry",
+          "tags": [
+            "cncf",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/vmware-harbor-registry"
+        },
+        {
+          "aliases": [
+            "vmware-photon",
+            "vmwarephoton"
+          ],
+          "category": "os",
+          "label": "VMware Photon",
+          "name": "photon",
+          "tags": [
+            "os",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/photon"
+        },
+        {
+          "aliases": [
+            "vmwaresrm"
+          ],
+          "category": "server-app",
+          "label": "VMware Site Recovery Manager",
+          "name": "vmware-srm",
+          "tags": [
+            "server-app",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/vmware-srm"
+        },
+        {
+          "aliases": [
+            "vmwarevcenter",
+            "vmware-vcenter"
+          ],
+          "category": "app",
+          "label": "VMware vCenter Server",
+          "name": "vcenter",
+          "tags": [
+            "app",
+            "vmware"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/vcenter"
+        },
+        {
+          "aliases": [
+            "vuejs"
+          ],
+          "category": "framework",
+          "label": "Vue",
+          "name": "vue",
+          "tags": [
+            "framework",
+            "herodevs",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/vue"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Vuetify",
+          "name": "vuetify",
+          "tags": [
+            "framework",
+            "herodevs",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/vuetify"
+        },
+        {
+          "aliases": [],
+          "category": "framework",
+          "label": "Wagtail",
+          "name": "wagtail",
+          "tags": [
+            "framework",
+            "python-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/wagtail"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Apple watchOS",
+          "name": "watchos",
+          "tags": [
+            "apple",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/watchos"
+        },
+        {
+          "aliases": [
+            "wforce"
+          ],
+          "category": "server-app",
+          "label": "Weakforced",
+          "name": "weakforced",
+          "tags": [
+            "server-app",
+            "web-server"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/weakforced"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "WeeChat",
+          "name": "weechat",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/weechat"
+        },
+        {
+          "aliases": [
+            "windowsembedded"
+          ],
+          "category": "os",
+          "label": "Microsoft Windows Embedded",
+          "name": "windows-embedded",
+          "tags": [
+            "microsoft",
+            "os",
+            "windows"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/windows-embedded"
+        },
+        {
+          "aliases": [
+            "windowsnanoserver"
+          ],
+          "category": "os",
+          "label": "Microsoft Nano Server",
+          "name": "windows-nano-server",
+          "tags": [
+            "microsoft",
+            "os",
+            "windows"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/windows-nano-server"
+        },
+        {
+          "aliases": [],
+          "category": "lang",
+          "label": "Microsoft Windows PowerShell",
+          "name": "windows-powershell",
+          "tags": [
+            "lang",
+            "microsoft"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/windows-powershell"
+        },
+        {
+          "aliases": [
+            "windowsservercore"
+          ],
+          "category": "os",
+          "label": "Microsoft Windows Server Core",
+          "name": "windows-server-core",
+          "tags": [
+            "microsoft",
+            "os",
+            "windows"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/windows-server-core"
+        },
+        {
+          "aliases": [
+            "windowsserver"
+          ],
+          "category": "os",
+          "label": "Microsoft Windows Server",
+          "name": "windows-server",
+          "tags": [
+            "microsoft",
+            "os",
+            "windows"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/windows-server"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Microsoft Windows",
+          "name": "windows",
+          "tags": [
+            "microsoft",
+            "os",
+            "windows"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/windows"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Wireshark",
+          "name": "wireshark",
+          "tags": [
+            "app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/wireshark"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "WordPress",
+          "name": "wordpress",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/wordpress"
+        },
+        {
+          "aliases": [
+            "xcpng"
+          ],
+          "category": "os",
+          "label": "XCP-ng",
+          "name": "xcp-ng",
+          "tags": [
+            "linux-foundation",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/xcp-ng"
+        },
+        {
+          "aliases": [],
+          "category": "app",
+          "label": "Yarn",
+          "name": "yarn",
+          "tags": [
+            "app",
+            "build-tool",
+            "javascript-runtime"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/yarn"
+        },
+        {
+          "aliases": [
+            "yocto-project"
+          ],
+          "category": "os",
+          "label": "Yocto Project",
+          "name": "yocto",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/yocto"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "YouTrack",
+          "name": "youtrack",
+          "tags": [
+            "jetbrains",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/youtrack"
+        },
+        {
+          "aliases": [],
+          "category": "server-app",
+          "label": "Zabbix",
+          "name": "zabbix",
+          "tags": [
+            "php-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/zabbix"
+        },
+        {
+          "aliases": [],
+          "category": "os",
+          "label": "Zentyal",
+          "name": "zentyal",
+          "tags": [
+            "linux-distribution",
+            "os"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/zentyal"
+        },
+        {
+          "aliases": [
+            "hpe-zerto"
+          ],
+          "category": "app",
+          "label": "HPE Zerto",
+          "name": "zerto",
+          "tags": [
+            "app",
+            "hpe",
+            "zerto"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/zerto"
+        },
+        {
+          "aliases": [
+            "apache_zookeeper",
+            "apache-zookeeper"
+          ],
+          "category": "server-app",
+          "label": "Apache ZooKeeper",
+          "name": "zookeeper",
+          "tags": [
+            "apache",
+            "java-runtime",
+            "server-app"
+          ],
+          "uri": "https://endoflife.date/api/v1/products/zookeeper"
+        }
+      ],
+      "schema_version": "1.2.1",
+      "total": 490
+    }
+  }
+}
