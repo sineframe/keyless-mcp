@@ -1,0 +1,53 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://endoflife.date/api/v1/products/notaproduct/",
+    "body": null
+  },
+  "response": {
+    "status": 404,
+    "content_type": "text/html",
+    "body_format": "text",
+    "body": [
+      "<!DOCTYPE html>\n",
+      "<html lang=\"en\">\n",
+      "<head>\n",
+      "  <meta charset=\"UTF-8\">\n",
+      "  <title>Page not Found | endoflife.date</title>\n",
+      "  <style>\n",
+      "    body {\n",
+      "      background: #222;\n",
+      "      color: #fff;\n",
+      "      font-family: 'Segoe UI', Arial, sans-serif;\n",
+      "      text-align: center;\n",
+      "      padding: 5em 1em;\n",
+      "    }\n",
+      "    h1 {\n",
+      "      font-size: 5em;\n",
+      "      margin-bottom: 0.2em;\n",
+      "    }\n",
+      "    .emoji {\n",
+      "      font-size: 5em;\n",
+      "      margin-bottom: 0.2em;\n",
+      "    }\n",
+      "    p {\n",
+      "      font-size: 1.5em;\n",
+      "      margin-bottom: 2em;\n",
+      "    }\n",
+      "    a {\n",
+      "      color: rgb(108, 77, 236);\n",
+      "      text-decoration: underline;\n",
+      "      font-weight: bold;\n",
+      "    }\n",
+      "  </style>\n",
+      "</head>\n",
+      "<body>\n",
+      "  <div class=\"emoji\">💀</div>\n",
+      "  <h1>404</h1>\n",
+      "  <p>This page has officially reached its end of life.</p>\n",
+      "  <a href=\"/\">Go to homepage</a>\n",
+      "</body>\n",
+      "</html>\n"
+    ]
+  }
+}

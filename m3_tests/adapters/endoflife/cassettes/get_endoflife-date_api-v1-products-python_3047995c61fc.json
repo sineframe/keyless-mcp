@@ -1,0 +1,825 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://endoflife.date/api/v1/products/python/",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "generated_at": "2026-11-27T00:08:31+00:00",
+      "last_modified": "2026-11-16T22:35:06+00:00",
+      "result": {
+        "aliases": [],
+        "category": "lang",
+        "identifiers": [
+          {
+            "id": "pkg:generic/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.15",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.14",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.13",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.12",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.11",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.10",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.9",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.8",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.7",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.6",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.5",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.4",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.3",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.2",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.1",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python3.0",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python2.7",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python2.6",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python2.5",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python2.4",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python2.3",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python2.2",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/ubuntu/python2.1",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.15",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.14",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.13",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.11",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.9",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.7",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.5",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.4",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.2",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python3.1",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python2.7",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python2.6",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python2.5",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python2.4",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python2.3",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python2.2",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python2.1",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:deb/debian/python1.5",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.15",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.14",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.13",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.12",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.11",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.10",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.9",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.8",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.6",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/fedora/python3.5",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/amzn/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/amzn/python2",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/amzn/python3",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/redhat/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/redhat/python2",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/redhat/python3",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/redhat/python27",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/redhat/python38",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/redhat/python39",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/redhat/python3.11",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/redhat/python3.12",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/centos/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/centos/python2",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:rpm/centos/python3",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:docker/library/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:docker/circleci/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:docker/bitnami/python",
+            "type": "purl"
+          },
+          {
+            "id": "pkg:github/python/cpython",
+            "type": "purl"
+          },
+          {
+            "id": "python",
+            "type": "repology"
+          },
+          {
+            "id": "cpe:/a:python:python",
+            "type": "cpe"
+          },
+          {
+            "id": "cpe:2.3:a:python:python",
+            "type": "cpe"
+          }
+        ],
+        "label": "Python",
+        "labels": {
+          "discontinued": null,
+          "eoas": "Active Support",
+          "eoes": null,
+          "eol": "Security Support"
+        },
+        "links": {
+          "html": "https://endoflife.date/python",
+          "icon": "https://cdn.jsdelivr.net/npm/simple-icons/icons/python.svg",
+          "releasePolicy": "https://devguide.python.org/versions/"
+        },
+        "name": "python",
+        "releases": [
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0790"
+            },
+            "eoasFrom": "2028-10-09",
+            "eolFrom": "2031-10-31",
+            "isEoas": false,
+            "isEol": false,
+            "isLts": false,
+            "isMaintained": true,
+            "label": "3.15",
+            "latest": {
+              "date": "2026-10-25",
+              "link": "https://www.python.org/downloads/release/python-3152/",
+              "name": "3.15.2"
+            },
+            "ltsFrom": null,
+            "name": "3.15",
+            "releaseDate": "2026-10-09"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0745"
+            },
+            "eoasFrom": "2027-10-01",
+            "eolFrom": "2030-10-31",
+            "isEoas": false,
+            "isEol": false,
+            "isLts": false,
+            "isMaintained": true,
+            "label": "3.14",
+            "latest": {
+              "date": "2026-10-25",
+              "link": "https://www.python.org/downloads/release/python-31410/",
+              "name": "3.14.10"
+            },
+            "ltsFrom": null,
+            "name": "3.14",
+            "releaseDate": "2025-10-07"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0719"
+            },
+            "eoasFrom": "2026-10-01",
+            "eolFrom": "2029-10-31",
+            "isEoas": true,
+            "isEol": false,
+            "isLts": false,
+            "isMaintained": true,
+            "label": "3.13",
+            "latest": {
+              "date": "2026-10-25",
+              "link": "https://www.python.org/downloads/release/python-31318/",
+              "name": "3.13.18"
+            },
+            "ltsFrom": null,
+            "name": "3.13",
+            "releaseDate": "2024-10-07"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0693"
+            },
+            "eoasFrom": "2025-04-02",
+            "eolFrom": "2028-10-31",
+            "isEoas": true,
+            "isEol": false,
+            "isLts": false,
+            "isMaintained": true,
+            "label": "3.12",
+            "latest": {
+              "date": "2026-10-25",
+              "link": "https://www.python.org/downloads/release/python-31216/",
+              "name": "3.12.16"
+            },
+            "ltsFrom": null,
+            "name": "3.12",
+            "releaseDate": "2023-10-02"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0664"
+            },
+            "eoasFrom": "2024-04-01",
+            "eolFrom": "2027-10-31",
+            "isEoas": true,
+            "isEol": false,
+            "isLts": false,
+            "isMaintained": true,
+            "label": "3.11",
+            "latest": {
+              "date": "2026-10-25",
+              "link": "https://www.python.org/downloads/release/python-31118/",
+              "name": "3.11.18"
+            },
+            "ltsFrom": null,
+            "name": "3.11",
+            "releaseDate": "2022-10-24"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0619"
+            },
+            "eoasFrom": "2023-04-05",
+            "eolFrom": "2026-10-01",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.10",
+            "latest": {
+              "date": "2026-10-01",
+              "link": "https://www.python.org/downloads/release/python-31022/",
+              "name": "3.10.22"
+            },
+            "ltsFrom": null,
+            "name": "3.10",
+            "releaseDate": "2021-10-04"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0596"
+            },
+            "eoasFrom": "2022-05-17",
+            "eolFrom": "2025-10-31",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.9",
+            "latest": {
+              "date": "2025-10-31",
+              "link": "https://www.python.org/downloads/release/python-3925/",
+              "name": "3.9.25"
+            },
+            "ltsFrom": null,
+            "name": "3.9",
+            "releaseDate": "2020-10-05"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0569"
+            },
+            "eoasFrom": "2021-05-03",
+            "eolFrom": "2024-10-07",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.8",
+            "latest": {
+              "date": "2024-09-06",
+              "link": "https://www.python.org/downloads/release/python-3820/",
+              "name": "3.8.20"
+            },
+            "ltsFrom": null,
+            "name": "3.8",
+            "releaseDate": "2019-10-14"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0537"
+            },
+            "eoasFrom": "2020-06-27",
+            "eolFrom": "2023-06-27",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.7",
+            "latest": {
+              "date": "2023-06-05",
+              "link": "https://www.python.org/downloads/release/python-3717/",
+              "name": "3.7.17"
+            },
+            "ltsFrom": null,
+            "name": "3.7",
+            "releaseDate": "2018-06-27"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0494"
+            },
+            "eoasFrom": "2018-12-24",
+            "eolFrom": "2021-12-23",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.6",
+            "latest": {
+              "date": "2021-09-03",
+              "link": "https://www.python.org/downloads/release/python-3615/",
+              "name": "3.6.15"
+            },
+            "ltsFrom": null,
+            "name": "3.6",
+            "releaseDate": "2016-12-23"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0478"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2020-09-30",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.5",
+            "latest": {
+              "date": "2020-09-05",
+              "link": "https://www.python.org/downloads/release/python-3510/",
+              "name": "3.5.10"
+            },
+            "ltsFrom": null,
+            "name": "3.5",
+            "releaseDate": "2015-09-13"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0429"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2019-03-18",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.4",
+            "latest": {
+              "date": "2019-03-18",
+              "link": "https://www.python.org/downloads/release/python-3410/",
+              "name": "3.4.10"
+            },
+            "ltsFrom": null,
+            "name": "3.4",
+            "releaseDate": "2014-03-16"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0398"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2017-09-29",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.3",
+            "latest": {
+              "date": "2017-09-19",
+              "link": "https://www.python.org/downloads/release/python-337/",
+              "name": "3.3.7"
+            },
+            "ltsFrom": null,
+            "name": "3.3",
+            "releaseDate": "2012-09-29"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0392"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2016-02-20",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.2",
+            "latest": {
+              "date": "2014-10-12",
+              "link": "https://www.python.org/downloads/release/python-326/",
+              "name": "3.2.6"
+            },
+            "ltsFrom": null,
+            "name": "3.2",
+            "releaseDate": "2011-02-20"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0373"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2020-01-01",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "2.7",
+            "latest": {
+              "date": "2020-04-19",
+              "link": "https://www.python.org/downloads/release/python-2718/",
+              "name": "2.7.18"
+            },
+            "ltsFrom": null,
+            "name": "2.7",
+            "releaseDate": "2010-07-03"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0375"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2012-04-09",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.1",
+            "latest": {
+              "date": "2012-04-06",
+              "link": "https://www.python.org/downloads/release/python-315/",
+              "name": "3.1.5"
+            },
+            "ltsFrom": null,
+            "name": "3.1",
+            "releaseDate": "2009-06-27"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0361"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2009-06-27",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "3.0",
+            "latest": {
+              "date": "2009-02-12",
+              "link": "https://www.python.org/downloads/release/python-301/",
+              "name": "3.0.1"
+            },
+            "ltsFrom": null,
+            "name": "3.0",
+            "releaseDate": "2008-12-03"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0361"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2013-10-29",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "2.6",
+            "latest": {
+              "date": "2013-10-29",
+              "link": "https://www.python.org/downloads/release/python-269/",
+              "name": "2.6.9"
+            },
+            "ltsFrom": null,
+            "name": "2.6",
+            "releaseDate": "2008-10-01"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0356"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2011-05-26",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "2.5",
+            "latest": {
+              "date": "2011-05-28",
+              "link": "https://www.python.org/downloads/release/python-256/",
+              "name": "2.5.6"
+            },
+            "ltsFrom": null,
+            "name": "2.5",
+            "releaseDate": "2006-09-19"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0320"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2008-12-19",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "2.4",
+            "latest": {
+              "date": "2008-12-19",
+              "link": "https://www.python.org/downloads/release/python-246/",
+              "name": "2.4.6"
+            },
+            "ltsFrom": null,
+            "name": "2.4",
+            "releaseDate": "2004-11-30"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0283"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2008-03-11",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "2.3",
+            "latest": {
+              "date": "2008-03-11",
+              "link": "https://www.python.org/downloads/release/python-237/",
+              "name": "2.3.7"
+            },
+            "ltsFrom": null,
+            "name": "2.3",
+            "releaseDate": "2003-07-29"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0251"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2003-05-30",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "2.2",
+            "latest": {
+              "date": "2003-05-30",
+              "link": "https://www.python.org/downloads/release/python-223/",
+              "name": "2.2.3"
+            },
+            "ltsFrom": null,
+            "name": "2.2",
+            "releaseDate": "2001-12-21"
+          },
+          {
+            "codename": null,
+            "custom": {
+              "pep": "PEP-0226"
+            },
+            "eoasFrom": null,
+            "eolFrom": "2002-04-09",
+            "isEoas": true,
+            "isEol": true,
+            "isLts": false,
+            "isMaintained": false,
+            "label": "2.1",
+            "latest": {
+              "date": "2002-04-09",
+              "link": "https://www.python.org/downloads/release/python-213/",
+              "name": "2.1.3"
+            },
+            "ltsFrom": null,
+            "name": "2.1",
+            "releaseDate": "2001-04-17"
+          }
+        ],
+        "tags": [
+          "lang"
+        ],
+        "versionCommand": "python --version\n\n# or alternatively\npython3 --version"
+      },
+      "schema_version": "1.2.1"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+name: endoflife
+title: endoflife.date
+description: Find software release cycles, support and end-of-life dates, and available product slugs.
+toolset: dev
+# v1 is the current API; the legacy /api/*.json API is deprecated.
+base_url: https://endoflife.date/api/v1
+docs_url: https://endoflife.date/docs/api/v1/
+# The API documents fair-use 429 responses, not a numeric quota. This is a local conservative cap.
+rate_limit_per_minute: 30
+author: abhinavrastogi2627
