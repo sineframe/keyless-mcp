@@ -1,8 +1,8 @@
 """Real-agent lane: given a plain-English question, does the agent pick the right keyless tool?
 
 Each case is one natural-language prompt that never names a tool. The agent gets the whole
-keyless-mcp catalog (every adapter), so a pass means it chose the right tool among 16 realistic
-alternatives, and the assertion checks the call M3 recorded on the wire (tool, arguments and a
+keyless-mcp catalog (every adapter), so a pass means it chose the right tool among every other tool
+in the catalog, and the assertion checks the call M3 recorded on the wire (tool, arguments and a
 successful result), not what the agent says it did.
 
 The server runs in LIVE mode: real agent, real upstream APIs, real data. These tests cost model
@@ -31,9 +31,9 @@ ALIAS = "keyless"
 
 # Hints are added per harness kind, and only where a harness needs one. Codex brings its own web
 # search and, left alone, answers from that, which says nothing about keyless-mcp. Its hint points
-# the agent at the server without naming any tool, so the test still measures which of the 16
-# tools it picks. Claude Code needs none: M3 turns its built-in tools off. A harness not listed
-# here gets the bare prompt.
+# the agent at the server without naming any tool, so the test still measures which of the
+# catalog's tools it picks. Claude Code needs none: M3 turns its built-in tools off. A harness
+# not listed here gets the bare prompt.
 HARNESS_HINTS: dict[str, str] = {
     "codex": f"Use only the tools of the `{ALIAS}` MCP server for this; do not browse the web. ",
 }
@@ -61,6 +61,19 @@ def _in_range(args: Mapping[str, Any], key: str, low: int, high: int, default: i
         return low <= int(args.get(key, default)) <= high
     except (TypeError, ValueError):
         return False
+
+
+def _currency_pair(args: Mapping[str, Any], one: str, other: str) -> bool:
+    """True when the call covers the pair in either direction; no symbols means every currency."""
+    base = _text(args, "base") or "eur"
+    symbols = args.get("symbols")
+    targets = (
+        None if symbols is None else {code.strip().lower() for code in str(symbols).split(",")}
+    )
+    for left, right in ((one, other), (other, one)):
+        if base == left and (targets is None or right in targets):
+            return True
+    return False
 
 
 @dataclass(frozen=True)
@@ -140,6 +153,34 @@ CASES = (
         "What are the top stories on Hacker News right now?",
         ("hackernews_top_stories",),
         lambda a: _in_range(a, "limit", 1, 30, default=10),
+    ),
+    Case(
+        "sunrise-sunset-times",
+        "What time did the sun rise and set at latitude 36.72, longitude -4.42 on 2024-06-21?",
+        ("sunrise_sunset_get_times",),
+        lambda a: _near(a, 36.72, -4.42) and _text(a, "date") == "2024-06-21",
+    ),
+    Case(
+        "frankfurter-rate",
+        "What was the euro to US dollar reference exchange rate on 2 January 2024?",
+        ("frankfurter_get_rates",),
+        lambda a: _text(a, "date") == "2024-01-02" and _currency_pair(a, "eur", "usd"),
+    ),
+    Case(
+        "frankfurter-series",
+        "Show the daily euro to British pound reference rate from 2 to 12 January 2024.",
+        ("frankfurter_get_time_series",),
+        lambda a: (
+            _text(a, "start_date") == "2024-01-02"
+            and _text(a, "end_date") == "2024-01-12"
+            and _currency_pair(a, "eur", "gbp")
+        ),
+    ),
+    Case(
+        "endoflife-product",
+        "When does Python 3.12 reach end of life?",
+        ("endoflife_get_product",),
+        lambda a: _text(a, "product") == "python",
     ),
 )
 
