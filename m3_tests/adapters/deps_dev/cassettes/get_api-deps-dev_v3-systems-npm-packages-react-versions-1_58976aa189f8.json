@@ -1,0 +1,59 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.deps.dev/v3/systems/NPM/packages/react/versions/18.2.0:dependencies",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "edges": [
+        {
+          "fromNode": 0,
+          "requirement": "^1.1.0",
+          "toNode": 2
+        },
+        {
+          "fromNode": 2,
+          "requirement": "^3.0.0 || ^4.0.0",
+          "toNode": 1
+        }
+      ],
+      "error": "",
+      "nodes": [
+        {
+          "bundled": false,
+          "errors": [],
+          "relation": "SELF",
+          "versionKey": {
+            "name": "react",
+            "system": "NPM",
+            "version": "18.2.0"
+          }
+        },
+        {
+          "bundled": false,
+          "errors": [],
+          "relation": "INDIRECT",
+          "versionKey": {
+            "name": "js-tokens",
+            "system": "NPM",
+            "version": "4.0.0"
+          }
+        },
+        {
+          "bundled": false,
+          "errors": [],
+          "relation": "DIRECT",
+          "versionKey": {
+            "name": "loose-envify",
+            "system": "NPM",
+            "version": "1.4.0"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.deps.dev/v3/systems/NPM/packages/%40types%2Fnode/versions/18.0.0",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "advisoryKeys": [],
+      "attestations": [],
+      "deprecatedReason": "",
+      "isDefault": false,
+      "isDeprecated": false,
+      "licenses": [
+        "MIT"
+      ],
+      "links": [
+        {
+          "label": "HOMEPAGE",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node"
+        },
+        {
+          "label": "ORIGIN",
+          "url": "https://registry.npmjs.org/@types%2Fnode/18.0.0"
+        },
+        {
+          "label": "SOURCE_REPO",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        }
+      ],
+      "publishedAt": "2022-06-15T23:01:41Z",
+      "registries": [
+        "https://registry.npmjs.org/"
+      ],
+      "relatedProjects": [
+        {
+          "projectKey": {
+            "id": "github.com/definitelytyped/definitelytyped"
+          },
+          "relationProvenance": "UNVERIFIED_METADATA",
+          "relationType": "SOURCE_REPO"
+        }
+      ],
+      "slsaProvenances": [],
+      "versionKey": {
+        "name": "@types/node",
+        "system": "NPM",
+        "version": "18.0.0"
+      }
+    }
+  }
+}
