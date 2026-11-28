@@ -1,0 +1,97 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.deps.dev/v3/systems/NPM/packages/is-odd",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body_format": "json",
+    "body": {
+      "packageKey": {
+        "name": "is-odd",
+        "system": "NPM"
+      },
+      "versions": [
+        {
+          "deprecatedReason": "",
+          "isDefault": false,
+          "isDeprecated": false,
+          "publishedAt": "2015-02-24T05:53:13Z",
+          "versionKey": {
+            "name": "is-odd",
+            "system": "NPM",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "deprecatedReason": "",
+          "isDefault": false,
+          "isDeprecated": false,
+          "publishedAt": "2016-12-07T07:18:01Z",
+          "versionKey": {
+            "name": "is-odd",
+            "system": "NPM",
+            "version": "0.1.1"
+          }
+        },
+        {
+          "deprecatedReason": "",
+          "isDefault": false,
+          "isDeprecated": false,
+          "publishedAt": "2017-05-27T13:04:38Z",
+          "versionKey": {
+            "name": "is-odd",
+            "system": "NPM",
+            "version": "0.1.2"
+          }
+        },
+        {
+          "deprecatedReason": "",
+          "isDefault": false,
+          "isDeprecated": false,
+          "publishedAt": "2017-05-27T18:18:17Z",
+          "versionKey": {
+            "name": "is-odd",
+            "system": "NPM",
+            "version": "1.0.0"
+          }
+        },
+        {
+          "deprecatedReason": "",
+          "isDefault": false,
+          "isDeprecated": false,
+          "publishedAt": "2017-11-01T05:35:04Z",
+          "versionKey": {
+            "name": "is-odd",
+            "system": "NPM",
+            "version": "2.0.0"
+          }
+        },
+        {
+          "deprecatedReason": "",
+          "isDefault": false,
+          "isDeprecated": false,
+          "publishedAt": "2018-05-30T18:00:55Z",
+          "versionKey": {
+            "name": "is-odd",
+            "system": "NPM",
+            "version": "3.0.0"
+          }
+        },
+        {
+          "deprecatedReason": "",
+          "isDefault": true,
+          "isDeprecated": false,
+          "publishedAt": "2018-05-31T20:04:53Z",
+          "versionKey": {
+            "name": "is-odd",
+            "system": "NPM",
+            "version": "3.0.1"
+          }
+        }
+      ]
+    }
+  }
+}

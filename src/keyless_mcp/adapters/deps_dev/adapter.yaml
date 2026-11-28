@@ -1,0 +1,10 @@
+name: deps_dev
+title: deps.dev (Open Source Insights)
+description: Look up package versions, licenses, advisories and resolved dependencies across registries with Google's deps.dev.
+toolset: dev
+base_url: https://api.deps.dev/v3
+docs_url: https://docs.deps.dev/api/v3/
+# Conservative client limit, not a provider quota: no formally specified rate limit.
+# Provider policy: https://github.com/google/deps.dev/issues/33#issuecomment-1744108819
+rate_limit_per_minute: 60
+author: abhinavrastogi2627

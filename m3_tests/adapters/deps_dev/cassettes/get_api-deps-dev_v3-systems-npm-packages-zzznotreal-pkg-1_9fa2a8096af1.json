@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://api.deps.dev/v3/systems/NPM/packages/zzznotreal-pkg-1234",
+    "body": null
+  },
+  "response": {
+    "status": 404,
+    "content_type": "text/plain",
+    "body_format": "text",
+    "body": [
+      "package not found"
+    ]
+  }
+}
